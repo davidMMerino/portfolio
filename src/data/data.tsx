@@ -11,8 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import BehanceIcon from '../components/Icon/BehanceIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -237,39 +236,33 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Ongoing',
+    location: 'Art & Design School, Soria',
+    title: "Bachelor's Degree in Graphic Design",
+    content: <p>I have learned to use image and video editing software such as Adobe Photoshop, Illustrator, and Premiere. Additionally, I acquired knowledge in typography, color theory, visual composition, UX/UI design, brand identity creation, editorial project development, and 2D animation. I have also worked on the production of printed and digital materials and developed skills to manage design projects from concept to completion.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2024',
+    location: 'Samsung & EOI',
+    title: 'Programming, Algorithms, and Data Structures in Python for Artificial Intelligence',
+    content: <p>I developed a strong foundation in programming with Python, including creating efficient algorithms and data structures. I also gained skills in analyzing complex data using algorithmic logic and learned how to plan programs through pseudocode and flowcharts to optimize processes.</p>,
+  },
+  {
+    date: '2024',
+    location: 'Samsung & EOI',
+    title: 'Artificial Intelligence',
+    content: <p>I gained a solid understanding of the fundamentals of data science and machine learning. I studied linear algebra, probability, and statistics applied to AI. I learned techniques for processing textual data and how to build deep neural networks using libraries such as TensorFlow and Keras to implement advanced artificial intelligence models.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2020, Present',
+    location: '',
+    title: 'Freelance Designer & Illustrator',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I have worked on a variety of projects for both individuals and companies, handling commissions such as illustrations for portraits, magazines, and posters. My experience includes illustration and layout for children's books and interactive novels, as well as creating visual assets for editorial projects. Throughout my freelance career, I have managed end-to-end design processes, ensuring high-quality results tailored to client needs.
       </p>
     ),
   },
@@ -285,23 +278,18 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'hssullivan27@gmail.com',
+      href: 'mailto:hssullivan27@gmail.com',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@h.s.sullivan',
+      href: 'https://www.instagram.com/h.s.sullivan/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'davidMMerino',
+      href: 'https://github.com/davidMMerino',
     },
   ],
 };
@@ -310,9 +298,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Behance', Icon: BehanceIcon, href: 'https://www.behance.net/6b893012'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/davidMMerino'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/h.s.sullivan/'},
 ];
