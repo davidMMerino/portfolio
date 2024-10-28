@@ -79,8 +79,8 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
-  url: string;
   image: string | StaticImageData;
+  images?: (string | StaticImageData)[];
 }
 
 /**
@@ -147,4 +147,12 @@ export interface Social {
   label: string;
   Icon: FC<IconProps>;
   href: string;
+}
+
+/**
+ * Modal 
+ */
+export interface ModalProps {
+  item: PortfolioItem;
+  onClose: () => void;
 }

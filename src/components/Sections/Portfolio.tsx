@@ -8,8 +8,22 @@ import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
+import Modal from './Modal'
 
 const Portfolio: FC = memo(() => {
+  const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (item: PortfolioItem) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
+    setIsModalOpen(false);
+  };
+  
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
@@ -18,7 +32,10 @@ const Portfolio: FC = memo(() => {
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
             return (
-              <div className="pb-6" key={`${title}-${index}`}>
+              <div className="pb-6" 
+              key={`${title}-${index}`}
+              onClick={() => openModal(item)}
+              >
                 <div
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
@@ -31,6 +48,9 @@ const Portfolio: FC = memo(() => {
           })}
         </div>
       </div>
+      {isModalOpen && selectedItem && (
+        <Modal item={selectedItem} onClose={closeModal} />
+      )}
     </Section>
   );
 });
@@ -38,7 +58,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, description}}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -68,7 +88,6 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
         {'opacity-0 hover:opacity-80': !mobile},
         showOverlay ? 'opacity-80' : 'opacity-0',
       )}
-      href={url}
       onClick={handleItemClick}
       ref={linkRef}
       target="_blank">

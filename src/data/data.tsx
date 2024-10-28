@@ -35,6 +35,8 @@ import {
   TimelineItem,
 } from './dataDef';
 
+
+
 /**
  * Page meta data
  */
@@ -164,55 +166,47 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Cartel festival Creación Joven',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: creacionJoven,
+    images: [creacionJoven],
   },
   {
     title: 'Cuento Interactivo',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: cuentoInteractivo,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: cuentoCaperucita,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: ilustracionesUno,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: pulp,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: damian,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: revista,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: encargos,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: ilustracionesDos,
   },     
 ];
