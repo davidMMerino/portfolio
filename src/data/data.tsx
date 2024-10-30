@@ -18,7 +18,17 @@ import cuentoInteractivo from '../images/portfolio/cuento-1.jpg';
 import cuentoCaperucita from '../images/portfolio/cuento-2.jpeg';
 import ilustracionesUno from '../images/portfolio/dibujos-1.jpeg';
 import pulp from '../images/portfolio/pulp.jpg';
-import damian from '../images/portfolio/damian.jpg';
+import damian from '../images/portfolio/damian/damian.jpg';
+import damian2 from '../images/portfolio/damian/damian2.jpg';
+import damian3 from '../images/portfolio/damian/damian3.jpg';
+import damian4 from '../images/portfolio/damian/damian4.jpg';
+import damian5 from '../images/portfolio/damian/damian5.jpg';
+import damian6 from '../images/portfolio/damian/damian6.jpg';
+import damian7 from '../images/portfolio/damian/damian7.jpg';
+import damian8 from '../images/portfolio/damian/damian8.jpg';
+import damian9 from '../images/portfolio/damian/damian9.jpeg';
+import damian10 from '../images/portfolio/damian/damian10.jpeg';
+import damian11 from '../images/portfolio/damian/damian11.jpeg';
 import revista from '../images/portfolio/revista.jpeg';
 import encargos from '../images/portfolio/encargos.jpg';
 import ilustracionesDos from '../images/portfolio/dibujos-2.jpg';
@@ -166,47 +176,57 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Cartel festival Creación Joven',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: creacionJoven,
     images: [creacionJoven],
   },
   {
     title: 'Cuento Interactivo',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: cuentoInteractivo,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: cuentoCaperucita,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: ilustracionesUno,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: pulp,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: damian,
+    images: [damian, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9, damian10, damian11]
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: revista,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: encargos,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
+    deepDescription: '',
     image: ilustracionesDos,
   },     
 ];
