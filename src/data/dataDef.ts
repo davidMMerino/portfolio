@@ -22,8 +22,6 @@ export interface HomepageMeta {
  */
 export interface Hero {
   imageSrc: string;
-  name: string;
-  description: JSX.Element;
   actions: HeroActionItem[];
 }
 
@@ -77,9 +75,9 @@ export interface SkillGroup {
  * Portfolio section
  */
 export interface PortfolioItem {
-  title: string;
-  description: string;
-  deepDescription: string;
+  title: JSX.Element;
+  description: JSX.Element;
+  deepDescription: JSX.Element;
   image: string | StaticImageData;
   images?: (string | StaticImageData)[];
 }
@@ -92,20 +90,6 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
-}
-
-/**
- * Testimonial section
- */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
 }
 
 /**
@@ -123,8 +107,6 @@ export const ContactType = {
   Location: 'Location',
   Github: 'Github',
   LinkedIn: 'LinkedIn',
-  Facebook: 'Facebook',
-  Twitter: 'Twitter',
   Instagram: 'Instagram',
 } as const;
 
