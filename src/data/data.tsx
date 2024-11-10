@@ -54,7 +54,7 @@ import ilustracion22 from '../images/portfolio/ilustraciones/ilustracion22.jpg';
 import ilustracion23 from '../images/portfolio/ilustraciones/ilustracion23.jpg';
 import ilustracion24 from '../images/portfolio/ilustraciones/ilustracion24.jpg';
 import ilustracion25 from '../images/portfolio/ilustraciones/ilustracion25.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profileImage from '../images/fotoPerfil.png'
 import {
   About,
   ContactSection,
@@ -73,8 +73,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'HSSullivan',
+  description: "HSSUlivan's page",
 };
 
 /**
@@ -116,7 +116,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: profileImage,
   description: `I am a graphic designer with freelance experience and a background in programming. I am passionate about creating innovative and functional visual solutions.`,
   aboutItems: [
     {label: 'Location', text: 'Burgos, Spain', Icon: MapIcon},
