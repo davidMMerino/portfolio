@@ -6,7 +6,7 @@ import { FC, Fragment, memo, useCallback, useMemo, useState } from 'react';
 
 import { SectionId } from '../../data/data';
 import { useNavObserver } from '../../hooks/useNavObserver';
-// import LanguageSelector from '../../LanguageSelector'; // Asegúrate de que la ruta sea correcta
+import LanguageSelector from '../../LanguageSelector'; // Asegúrate de que la ruta sea correcta
 
 export const headerID = 'headerNav';
 

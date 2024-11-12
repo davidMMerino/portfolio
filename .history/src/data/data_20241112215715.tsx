@@ -312,7 +312,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  // {label: 'Behance', Icon: BehanceIcon, href: 'https://www.behance.net/6b893012'},
+  {label: 'Behance', Icon: BehanceIcon, href: 'https://www.behance.net/6b893012'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/davidMMerino'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/h.s.sullivan/'},

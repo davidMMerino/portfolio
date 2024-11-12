@@ -11,7 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-// import BehanceIcon from '../components/Icon/BehanceIcon';
+import BehanceIcon from '../components/Icon/BehanceIcon';
 import heroImage from '../images/heroImage.png';
 import creacionJoven from '../images/portfolio/creacion-joven.jpg';
 import cuentoInteractivo from '../images/portfolio/cuento-1.jpg';
@@ -312,7 +312,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  // {label: 'Behance', Icon: BehanceIcon, href: 'https://www.behance.net/6b893012'},
+  {label: 'Behance', Icon: BehanceIcon, href: 'https://www.behance.net/6b893012'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/davidMMerino'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/h.s.sullivan/'},

@@ -8,7 +8,7 @@ import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
-// import Modal from './Modal'
+import Modal from './Modal'
 
 const Portfolio: FC = memo(() => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
