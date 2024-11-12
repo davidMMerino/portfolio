@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "yarn compile && yarn next build",
+    "build:css": "postcss globalStyles.scss -o output.css",
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",

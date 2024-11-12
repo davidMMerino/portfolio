@@ -74,7 +74,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'HSSullivan',
-  description: "HSSUlivan's page",
+  description: "HSSullivan's page",
 };
 
 /**

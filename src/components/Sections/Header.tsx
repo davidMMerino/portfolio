@@ -1,20 +1,19 @@
-import {Dialog, Transition} from '@headlessui/react';
-import {Bars3BottomRightIcon} from '@heroicons/react/24/outline';
+import { Dialog, Transition } from '@headlessui/react';
+import { Bars3BottomRightIcon } from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
-import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
+import { FC, Fragment, memo, useCallback, useMemo, useState } from 'react';
 
-import {SectionId} from '../../data/data';
-import {useNavObserver} from '../../hooks/useNavObserver';
+import { SectionId } from '../../data/data';
+import { useNavObserver } from '../../hooks/useNavObserver';
+import LanguageSelector from '../../LanguageSelector'; // Asegúrate de que la ruta sea correcta
 
 export const headerID = 'headerNav';
 
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
-  const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Contact],
-    [],
-  );
+  const [isOpen, setIsOpen] = useState<boolean>(false);  // Estado para controlar si el menú está abierto
+  const navSections = useMemo(() => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Contact], []);
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
     section && setCurrentSection(section);
@@ -22,20 +21,36 @@ const Header: FC = memo(() => {
 
   useNavObserver(navSections.map(section => `#${section}`).join(','), intersectionHandler);
 
+  const toggleOpen = useCallback(() => {
+    setIsOpen(!isOpen);
+  }, [isOpen]);
+
   return (
     <>
-      <MobileNav currentSection={currentSection} navSections={navSections} />
+      <MobileNav
+        currentSection={currentSection}
+        navSections={navSections}
+        isOpen={isOpen}
+        toggleOpen={toggleOpen}
+      />
       <DesktopNav currentSection={currentSection} navSections={navSections} />
+      {/* Solo muestra el LanguageSelector cuando el menú no está abierto en pantallas grandes */}
+      {!isOpen && (
+        <div className="fixed right-4 top-1 z-50 sm:block hidden">
+          <LanguageSelector />
+        </div>
+      )}
     </>
   );
 });
 
-const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
-  ({navSections, currentSection}) => {
+const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null }> = memo(
+  ({ navSections, currentSection }) => {
     const baseClass =
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-800 sm:hover:text-violet-800 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-violet-800');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
+    
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
@@ -54,14 +69,8 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
   },
 );
 
-const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
-  ({navSections, currentSection}) => {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    const toggleOpen = useCallback(() => {
-      setIsOpen(!isOpen);
-    }, [isOpen]);
-
+const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null; isOpen: boolean; toggleOpen: () => void }> = memo(
+  ({ navSections, currentSection, isOpen, toggleOpen }) => {
     const baseClass =
       'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-800';
     const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
@@ -95,7 +104,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               leave="transition ease-in-out duration-300 transform"
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full">
-              <div className="relative w-4/5 bg-stone-800">
+              <div className="relative w-4/5 bg-stone-800 flex flex-col justify-between h-full">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
                   {navSections.map(section => (
                     <NavItem
@@ -108,6 +117,10 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
                     />
                   ))}
                 </nav>
+                {/* Aquí colocamos el LanguageSelector al final del MobileNav */}
+                <div className="mt-auto p-4 border-t border-gray-700">
+                  <LanguageSelector />
+                </div>
               </div>
             </Transition.Child>
           </Dialog>
@@ -123,7 +136,7 @@ const NavItem: FC<{
   activeClass: string;
   inactiveClass: string;
   onClick?: () => void;
-}> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
+}> = memo(({ section, current, inactiveClass, activeClass, onClick }) => {
   return (
     <Link
       className={classNames(current ? activeClass : inactiveClass)}
