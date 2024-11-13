@@ -48,18 +48,15 @@ const Header: FC = memo(() => {
 
   return (
     <>
-      {/* Pasamos el idioma como prop a MobileNav */}
       <MobileNav
         currentSection={currentSection}
         navSections={navSections}
         isOpen={isOpen}
         toggleOpen={toggleOpen}
         setLanguage={setLanguage}
-        language={language}  // Añadimos language aquí
+        language={language}
       />
-      
       <DesktopNav currentSection={currentSection} navSections={navSections} />
-      
       {!isOpen && (
         <div className="fixed right-4 top-1 z-50 sm:block hidden">
           {/* Asegúrate de pasar el idioma actual correctamente */}
@@ -102,8 +99,7 @@ const MobileNav: FC<{
   isOpen: boolean;
   toggleOpen: () => void;
   setLanguage: (lng: 'en' | 'es') => void;
-  language: 'en' | 'es';  // Aquí agregamos `language` en las props
-}> = memo(({ navSections, currentSection, isOpen, toggleOpen, setLanguage, language }) => {
+}> = memo(({ navSections, currentSection, isOpen, toggleOpen, setLanguage }) => {
   const baseClass =
     'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-800';
   const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');

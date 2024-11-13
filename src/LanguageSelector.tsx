@@ -1,27 +1,21 @@
-import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { FC } from 'react';
+import spanishFlag from './images/spanish.png';
+import englishFlag from './images/english.png';
 
-import spanishFlag from './/images/spanish.png';
-import englishFlag from './/images/english.png';
+interface LanguageSelectorProps {
+  language: 'en' | 'es';
+  onChangeLanguage: (lng: 'en' | 'es') => void;
+}
 
-const LanguageSelector: FC = () => {
-  const router = useRouter();
-  const { locale, asPath } = router;
-
-  const changeLanguage = (lng: string) => {
-    const hash = window.location.hash;
-    router.push(`${asPath.split('#')[0]}${hash}`, undefined, { locale: lng });
-  };
-
-  const alternativeLanguage = locale === 'en' ? 'es' : 'en';
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ language, onChangeLanguage }) => {
+  const alternativeLanguage = language === 'en' ? 'es' : 'en';
   const flagImage = alternativeLanguage === 'en' ? englishFlag : spanishFlag;
   const altText = alternativeLanguage === 'en' ? 'Switch to English' : 'Cambiar a Español';
 
   return (
     <div className="flex gap-2">
       <button
-        onClick={() => changeLanguage(alternativeLanguage)}
+        onClick={() => onChangeLanguage(alternativeLanguage)}
         className="p-2 hover:opacity-100 focus:outline-none"
         aria-label={altText}
       >
