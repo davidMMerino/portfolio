@@ -39,7 +39,7 @@ import caperucita2 from '../images/portfolio/caperucita/caperucita2.jpeg';
 import caperucita3 from '../images/portfolio/caperucita/caperucita3.jpeg';
 import caperucita4 from '../images/portfolio/caperucita/caperucita4.jpeg';
 import caperucita5 from '../images/portfolio/caperucita/caperucita5.jpeg';
-import saul1 from '../images/portfolio/betterCallSaul/saul1.jpg';
+import saul1 from '../images/portfolio/betterCallSaul/saul1.jpeg';
 import saul2 from '../images/portfolio/betterCallSaul/saul2.jpeg';
 import saul3 from '../images/portfolio/betterCallSaul/saul3.jpg';
 import encargo1 from '../images/portfolio/encargos/encargo1.jpg';

@@ -15,23 +15,23 @@ import BehanceIcon from '../components/Icon/BehanceIcon';
 import heroImage from '../images/heroImage.png';
 import creacionJoven from '../images/portfolio/creacionJoven.jpg';
 import cuentoInteractivo from '../images/portfolio/cuentoInteractivo.jpg';
-import ilustraciones11 from '../images/portfolio/ilustraciones/ilustraciones11.jpeg';
-import ilustraciones12 from '../images/portfolio/ilustraciones/ilustraciones12.jpg';
-import ilustraciones13 from '../images/portfolio/ilustraciones/ilustraciones13.jpeg';
-import ilustraciones14 from '../images/portfolio/ilustraciones/ilustraciones14.jpeg';
-import ilustraciones15 from '../images/portfolio/ilustraciones/ilustraciones15.jpeg';
+import ilustracion11 from '../images/portfolio/ilustraciones/ilustracion11.jpeg';
+import ilustracion12 from '../images/portfolio/ilustraciones/ilustracion12.jpg';
+import ilustracion13 from '../images/portfolio/ilustraciones/ilustracion13.jpg';
+import ilustracion14 from '../images/portfolio/ilustraciones/ilustracion14.jpg';
+import ilustracion15 from '../images/portfolio/ilustraciones/ilustracion15.jpg';
 import pulp1 from '../images/portfolio/pulp/pulp1.jpg';
 import pulp2 from '../images/portfolio/pulp/pulp2.jpg';
 import pulp3 from '../images/portfolio/pulp/pulp3.jpg';
 import pulp4 from '../images/portfolio/pulp/pulp4.jpg';
 import pulp5 from '../images/portfolio/pulp/pulp5.jpg';
-import damian1 from '../images/portfolio/damian/damian1.jpeg';
+import damian1 from '../images/portfolio/damian/damian1.jpg';
 import damian2 from '../images/portfolio/damian/damian2.jpg';
 import damian3 from '../images/portfolio/damian/damian3.jpg';
 import damian4 from '../images/portfolio/damian/damian4.jpg';
 import damian5 from '../images/portfolio/damian/damian5.jpg';
 import damian6 from '../images/portfolio/damian/damian6.jpg';
-import damian7 from '../images/portfolio/damian/damian7.jpeg';
+import damian7 from '../images/portfolio/damian/damian7.jpg';
 import damian8 from '../images/portfolio/damian/damian8.jpg';
 import damian9 from '../images/portfolio/damian/damian9.jpeg';
 import caperucita1 from '../images/portfolio/caperucita/caperucita1.jpeg';
@@ -42,17 +42,17 @@ import caperucita5 from '../images/portfolio/caperucita/caperucita5.jpeg';
 import saul1 from '../images/portfolio/betterCallSaul/saul1.jpg';
 import saul2 from '../images/portfolio/betterCallSaul/saul2.jpeg';
 import saul3 from '../images/portfolio/betterCallSaul/saul3.jpg';
-import encargo1 from '../images/portfolio/encargos/encargo1.jpg';
-import encargo2 from '../images/portfolio/encargos/encargo2.jpg';
-import encargo3 from '../images/portfolio/encargos/encargo3.jpg';
-import encargo4 from '../images/portfolio/encargos/encargo4.jpg';
-import encargo5 from '../images/portfolio/encargos/encargo5.jpg';
-import ilustraciones21 from '../images/portfolio/ilustraciones/ilustraciones21.jpg';
-import ilustraciones22 from '../images/portfolio/ilustraciones/ilustraciones22.jpg';
-import ilustraciones23 from '../images/portfolio/ilustraciones/ilustraciones23.jpg';
-import ilustraciones24 from '../images/portfolio/ilustraciones/ilustraciones24.jpg';
-import ilustraciones25 from '../images/portfolio/ilustraciones/ilustraciones25.jpg';
-import profileImage from '../images/profileImage.png'
+import encargo1 from '../images/portfolio/retratos/encargo1.jpg';
+import encargo2 from '../images/portfolio/retratos/encargo2.jpg';
+import encargo3 from '../images/portfolio/retratos/encargo3.jpg';
+import encargo4 from '../images/portfolio/retratos/encargo4.jpg';
+import encargo5 from '../images/portfolio/retratos/encargo5.jpg';
+import ilustracion21 from '../images/portfolio/ilustraciones/ilustracion21.jpg';
+import ilustracion22 from '../images/portfolio/ilustraciones/ilustracion22.jpg';
+import ilustracion23 from '../images/portfolio/ilustraciones/ilustracion23.jpg';
+import ilustracion24 from '../images/portfolio/ilustraciones/ilustracion24.jpg';
+import ilustracion25 from '../images/portfolio/ilustraciones/ilustracion25.jpg';
+import profileImage from '../images/fotoPerfil.png'
 import {
   About,
   ContactSection,
@@ -203,8 +203,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: (<>HSSullivan Illustrations</>),
     description: (<>Series of illustrations I have created over the years.</>),
     deepDescription: (<>This series represents a collection of personal illustration projects I have created over the years, each reflecting my ongoing exploration and evolution as an artist. Constantly experimenting with new techniques and adapting my style, these pieces showcase a variety of approaches, themes, and visual expressions. This collection not only documents my artistic journey but also highlights my commitment to innovation and growth in my craft.</>),
-    image: ilustraciones11, 
-    images: [ilustraciones11, ilustraciones12, ilustraciones13, ilustraciones14, ilustraciones15],
+    image: ilustracion11, 
+    images: [ilustracion11, ilustracion12, ilustracion13, ilustracion14, ilustracion15],
   },
   {
     title: (<>Pulp Fanzine</>),
@@ -218,7 +218,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: (<>Series of illustrations featuring <em>Damian.</em></>),
     deepDescription: (<>Meet <em>Damian</em>, a cartoon character who has accompanied me throughout my journey as an illustrator. Damian serves as a canvas to showcase my creativity and artistic evolution. Over the years, I've illustrated him in various situations, each one highlighting a unique aspect of his personality while reflecting my own growth as an artist. From his early sketches to his latest iterations, Damian embodies my continuous exploration and refinement of technique. I hope you enjoy witnessing his development and transformation over time.</>),
     image: damian1,
-    images: [damian1, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9]
+    images: [damian1, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9, damian10, damian11]
   },
   {
     title: (<>Illustrations for <em>Cine para Todos</em> Magazine</>),
@@ -238,8 +238,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: (<>HSSullivan Illustrations II</>),
     description: (<>Series of illustrations I have created over the years.</>),
     deepDescription: (<>An updated collection of my latest illustrations. As a freelance artist, I have the freedom to explore various techniques and themes, adapting to each client's unique needs while maintaining my artistic vision. This flexibility has allowed me to work on a wide range of projects, from caricatures and portraits to complex illustrations for publications and marketing campaigns. The diversity of this portfolio showcases not only my technical skills but also my ability to tell stories through my illustrations.</>),
-    image: ilustraciones21, 
-    images: [ilustraciones21, ilustraciones22, ilustraciones23, ilustraciones24, ilustraciones25],
+    image: ilustracion21, 
+    images: [ilustracion21, ilustracion22, ilustracion23, ilustracion24, ilustracion25],
   },     
 ];
 

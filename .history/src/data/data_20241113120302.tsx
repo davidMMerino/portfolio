@@ -31,7 +31,7 @@ import damian3 from '../images/portfolio/damian/damian3.jpg';
 import damian4 from '../images/portfolio/damian/damian4.jpg';
 import damian5 from '../images/portfolio/damian/damian5.jpg';
 import damian6 from '../images/portfolio/damian/damian6.jpg';
-import damian7 from '../images/portfolio/damian/damian7.jpeg';
+import damian7 from '../images/portfolio/damian/damian7.jpg';
 import damian8 from '../images/portfolio/damian/damian8.jpg';
 import damian9 from '../images/portfolio/damian/damian9.jpeg';
 import caperucita1 from '../images/portfolio/caperucita/caperucita1.jpeg';
