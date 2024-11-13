@@ -224,7 +224,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: (<>Illustrations for <em>Cine para Todos</em> Magazine</>),
     description: (<>Series of illustrations on the show <em>Better Call Saul.</em></>),
     deepDescription: (<>This series of illustrations captures iconic moments from the television show <em>Better Call Saul</em>, created for an article in <em>Cine para Todos</em> magazine. Each illustration delves into pivotal scenes that define the show's tone and complex characters, highlighting themes of moral ambiguity and transformation. The artwork aims to visually convey the tension and cinematic style of the series, offering fans a fresh perspective on memorable scenes while enhancing the magazine's in-depth analysis of the show.</>),
-    image: saul1,
+    image: saul2,
     images: [saul1, saul2, saul3],
   },
   {
