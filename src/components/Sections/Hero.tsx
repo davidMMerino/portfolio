@@ -1,16 +1,15 @@
-import {ChevronDownIcon} from '@heroicons/react/24/outline';
+import { FC, memo } from 'react';
 import Image from 'next/image';
-import {FC, memo} from 'react';
-
-import {heroData, SectionId} from '../../data/data';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
+import { heroData, SectionId } from '../../data/data';
 import Section from '../Layout/Section';
+import { useLanguage } from '../../context/LanguageContext';
 
 
-interface HeroProps {
-  language: 'en' |'es';
-}
 
-const Hero: FC<HeroProps> = memo(({language}) => {
+
+const Hero: FC = memo(() => {
+  const { language } = useLanguage();
   const imageSrc = heroData.imageSrc[language];
 
   return (
