@@ -5,8 +5,13 @@ import {FC, memo} from 'react';
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
-const Hero: FC = memo(() => {
-  const {imageSrc} = heroData;
+
+interface HeroProps {
+  language: 'en' |'es';
+}
+
+const Hero: FC<HeroProps> = memo(({language}) => {
+  const imageSrc = heroData.imageSrc[language];
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>

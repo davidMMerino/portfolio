@@ -1,11 +1,8 @@
 import Image from 'next/image';
 import spanishFlag from './images/spanish.png';
 import englishFlag from './images/english.png';
+import { LanguageSelectorProps } from './data/dataDef';
 
-interface LanguageSelectorProps {
-  language: 'en' | 'es';
-  onChangeLanguage: (lng: 'en' | 'es') => void;
-}
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({ language, onChangeLanguage }) => {
   const alternativeLanguage = language === 'en' ? 'es' : 'en';

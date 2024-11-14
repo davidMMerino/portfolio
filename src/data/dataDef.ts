@@ -21,7 +21,7 @@ export interface HomepageMeta {
  * Hero section
  */
 export interface Hero {
-  imageSrc: string;
+  imageSrc: { en: string; es: string};
   actions: HeroActionItem[];
 }
 
@@ -82,6 +82,12 @@ export interface PortfolioItem {
   images?: (string | StaticImageData)[];
 }
 
+export interface PortfolioText {
+  title: string;
+  description: string;
+  deepDescription: string;
+}
+
 /**
  * Resume section
  */
@@ -138,4 +144,12 @@ export interface Social {
 export interface ModalProps {
   item: PortfolioItem;
   onClose: () => void;
+}
+
+/**
+ * Language 
+ */
+export interface LanguageSelectorProps {
+  language: 'en' | 'es';
+  onChangeLanguage: (lng: 'en' | 'es') => void;
 }

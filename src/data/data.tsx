@@ -12,7 +12,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import BehanceIcon from '../components/Icon/BehanceIcon';
-import heroImage from '../images/heroImage.png';
+import heroImageEnglish from '../images/heroImageEn.png';
+import heroImageSpanish from '../images/heroImageEs.png';
 import creacionJoven from '../images/portfolio/creacionJoven.jpg';
 import cuentoInteractivo from '../images/portfolio/cuentoInteractivo.jpg';
 import ilustraciones11 from '../images/portfolio/ilustraciones/ilustraciones11.jpeg';
@@ -65,7 +66,8 @@ import {
   TimelineItem,
 } from './dataDef';
 
-
+// import { useState, useEffect } from 'react';
+// import LanguageSelector from '../LanguageSelector';
 
 /**
  * Page meta data
@@ -94,18 +96,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
+  imageSrc: {
+    en: heroImageEnglish,
+    es: heroImageSpanish,
+  },
   actions: [
     {
       href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
     },
   ],
 };
@@ -177,6 +177,9 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
+
+
+
 export const portfolioItems: PortfolioItem[] = [
   {
     title: (<>Young Creation Festival Poster</>),
