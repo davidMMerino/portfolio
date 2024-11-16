@@ -17,10 +17,10 @@ const Header: FC = memo(() => {
   const { translations } = useLanguage();
 
   const navSections = [
-    { id: SectionId.About, label: translations.about },
-    { id: SectionId.Resume, label: translations.resume },
-    { id: SectionId.Portfolio, label: translations.portfolio },
-    { id: SectionId.Contact, label: translations.contact },
+    { id: SectionId.About, label: translations["header.about"] },
+    { id: SectionId.Resume, label: translations["header.resume"] },
+    { id: SectionId.Portfolio, label: translations["header.portfolio"] },
+    { id: SectionId.Contact, label: translations["header.contact"] },
   ];
 
   // Hook personalizado para observar las secciones en el viewport y actualizar `currentSection`

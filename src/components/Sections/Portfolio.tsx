@@ -4,7 +4,8 @@ import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
-import {portfolioItems, SectionId} from '../../data/data';
+import {getPortfolioItems, SectionId} from '../../data/data';
+import { useLanguage } from '../../context/LanguageContext';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
@@ -13,6 +14,10 @@ import Modal from './Modal'
 const Portfolio: FC = memo(() => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const { translations } = useLanguage();
+
+  const portfolioItems = getPortfolioItems(translations);
 
   const openModal = (item: PortfolioItem) => {
     setSelectedItem(item);
@@ -27,7 +32,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-xl font-bold text-white">{translations["portfolio.headerText"]}</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;

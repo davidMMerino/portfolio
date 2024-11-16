@@ -1,0 +1,124 @@
+.
+├── README.md
+├── estructura-proyecto.txt
+├── next-env.d.ts
+├── next-sitemap.js
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── damianIcon.ico
+│   ├── favicon.ico
+│   ├── locales
+│   │   ├── en.json // texto traducido al ingles
+│   │   └── es.json // texto traducido al español
+│   └── site.webmanifest
+├── src
+│   ├── LanguageSelector.tsx // const LanguageSelector
+│   ├── components
+│   │   ├── Base.tsx
+│   │   ├── Icon
+│   │   │   ├── BehanceIcon.tsx
+│   │   │   ├── DribbbleIcon.tsx
+│   │   │   ├── FacebookIcon.tsx
+│   │   │   ├── GithubIcon.tsx
+│   │   │   ├── Icon.tsx
+│   │   │   ├── InstagramIcon.tsx
+│   │   │   ├── LinkedInIcon.tsx
+│   │   │   ├── QuoteIcon.tsx
+│   │   │   ├── StackOverflowIcon.tsx
+│   │   │   └── TwitterIcon.tsx
+│   │   ├── Layout
+│   │   │   ├── Page.tsx
+│   │   │   └── Section.tsx
+│   │   ├── Sections
+│   │   │   ├── About.tsx
+│   │   │   ├── Contact
+│   │   │   │   ├── ContactForm.tsx
+│   │   │   │   └── index.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Header.tsx // const {translations} = useLanguage(); |    { id: SectionId.About, label: translations.about }, | <LanguageSelector />
+│   │   │   ├── Hero.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Portfolio.tsx
+│   │   │   └── Resume
+│   │   │       ├── ResumeSection.tsx
+│   │   │       ├── Skills.tsx
+│   │   │       ├── TimelineItem.tsx
+│   │   │       └── index.tsx
+│   │   └── Socials.tsx
+│   ├── config.ts
+│   ├── context
+│   │   └── LanguageContext.tsx // export LanguageProvider | interface LanguageContextType | export const useLanguage
+│   ├── data
+│   │   ├── data.tsx
+│   │   └── dataDef.ts
+│   ├── globalStyles.scss
+│   ├── hooks
+│   │   ├── useDetectOutsideClick.ts
+│   │   ├── useInterval.ts
+│   │   ├── useNavObserver.tsx
+│   │   └── useWindow.ts
+│   ├── images
+│   │   ├── english.png //en flag LanguageSelector
+│   │   ├── heroImageEn.png
+│   │   ├── heroImageEs.png
+│   │   ├── portfolio
+│   │   │   ├── betterCallSaul
+│   │   │   │   ├── saul1.jpg
+│   │   │   │   ├── saul2.jpg
+│   │   │   │   └── saul3.jpg
+│   │   │   ├── caperucita
+│   │   │   │   ├── caperucita1.jpeg
+│   │   │   │   ├── caperucita2.jpeg
+│   │   │   │   ├── caperucita3.jpeg
+│   │   │   │   ├── caperucita4.jpeg
+│   │   │   │   └── caperucita5.jpeg
+│   │   │   ├── creacionJoven.jpg
+│   │   │   ├── cuentoInteractivo.jpg
+│   │   │   ├── damian
+│   │   │   │   ├── damian1.jpeg
+│   │   │   │   ├── damian2.jpg
+│   │   │   │   ├── damian3.jpg
+│   │   │   │   ├── damian4.jpg
+│   │   │   │   ├── damian5.jpg
+│   │   │   │   ├── damian6.jpg
+│   │   │   │   ├── damian7.jpeg
+│   │   │   │   ├── damian8.jpg
+│   │   │   │   └── damian9.jpeg
+│   │   │   ├── encargos
+│   │   │   │   ├── encargo1.jpg
+│   │   │   │   ├── encargo2.jpg
+│   │   │   │   ├── encargo3.jpg
+│   │   │   │   ├── encargo4.jpg
+│   │   │   │   └── encargo5.jpg
+│   │   │   ├── ilustraciones
+│   │   │   │   ├── ilustraciones11.jpeg
+│   │   │   │   ├── ilustraciones12.jpg
+│   │   │   │   ├── ilustraciones13.jpeg
+│   │   │   │   ├── ilustraciones14.jpeg
+│   │   │   │   ├── ilustraciones15.jpeg
+│   │   │   │   ├── ilustraciones21.jpg
+│   │   │   │   ├── ilustraciones22.jpg
+│   │   │   │   ├── ilustraciones23.jpg
+│   │   │   │   ├── ilustraciones24.jpg
+│   │   │   │   └── ilustraciones25.jpg
+│   │   │   └── pulp
+│   │   │       ├── pulp1.jpg
+│   │   │       ├── pulp2.jpg
+│   │   │       ├── pulp3.jpg
+│   │   │       ├── pulp4.jpg
+│   │   │       └── pulp5.jpg
+│   │   ├── profileImage.png
+│   │   └── spanish.png // es flag LanguageSelector
+│   ├── pages
+│   │   ├── _app.tsx //<LanguageProvider>
+│   │   ├── _document.tsx
+│   │   ├── api
+│   │   └── index.tsx //archivo principal
+│   └── types.d.ts
+├── stylelint.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── tsconfig.tsbuildinfo
+
+23 directories, 99 files

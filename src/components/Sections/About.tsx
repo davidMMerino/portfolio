@@ -5,8 +5,11 @@ import {FC, memo} from 'react';
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
+import { useLanguage } from '../../context/LanguageContext'
+
 const About: FC = memo(() => {
-  const {profileImageSrc, description, aboutItems} = aboutData;
+  const { translations } = useLanguage();
+  const {profileImageSrc, description, aboutItems} = aboutData(translations);
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-y-4 h-full">
@@ -19,7 +22,7 @@ const About: FC = memo(() => {
         )}
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-bold text-white">About me</h2>
+            <h2 className="text-2xl font-bold text-white">{translations["about.title"]}</h2>
             <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
