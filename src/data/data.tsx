@@ -52,6 +52,7 @@ import ilustraciones23 from '../images/portfolio/ilustraciones/ilustraciones23.j
 import ilustraciones24 from '../images/portfolio/ilustraciones/ilustraciones24.jpg';
 import ilustraciones25 from '../images/portfolio/ilustraciones/ilustraciones25.jpg';
 import profileImage from '../images/profileImage.png'
+import FormattedText from '../FormattedText';
 
 import {
   About,
@@ -177,65 +178,65 @@ export const getSkills = (translations: any): SkillGroup[] => [
 
 export const getPortfolioItems = (translations: any): PortfolioItem[] => [
   {
-    title: translations["portfolio.title1"],
-    description: translations["portfolio.description1"],
-    deepDescription: translations["portfolio.deepDescription1"],
+    title: <FormattedText text={translations["portfolio.title1"]} />,
+    description: <FormattedText text={translations["portfolio.description1"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription1"]} />,
     image: creacionJoven,
     images: [creacionJoven],
   },
   {
-    title: translations["portfolio.title2"],
-    description: translations["portfolio.description2"],
-    deepDescription: translations["portfolio.deepDescription2"],
+    title: <FormattedText text={translations["portfolio.title2"]} />,
+    description: <FormattedText text={translations["portfolio.description2"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription2"]} />,
     image: caperucita1,
     images: [caperucita1, caperucita2, caperucita3, caperucita4, caperucita5],
   },
   {
-    title: translations["portfolio.title3"],
-    description: translations["portfolio.description3"],
-    deepDescription: translations["portfolio.deepDescription3"],
+    title: <FormattedText text={translations["portfolio.title3"]} />,
+    description: <FormattedText text={translations["portfolio.description3"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription3"]} />,
     image: ilustraciones11, 
     images: [ilustraciones11, ilustraciones12, ilustraciones13, ilustraciones14, ilustraciones15],
   },
   {
-    title: translations["portfolio.title4"],
-    description: translations["portfolio.description4"],
-    deepDescription: translations["portfolio.deepDescription4"],
+    title: <FormattedText text={translations["portfolio.title4"]} />,
+    description: <FormattedText text={translations["portfolio.description4"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription4"]} />,
     image: cuentoInteractivo,
     images: [cuentoInteractivo],
   },
   {
-    title: translations["portfolio.title5"],
-    description: translations["portfolio.description5"],
-    deepDescription: translations["portfolio.deepDescription5"],
+    title: <FormattedText text={translations["portfolio.title5"]} />,
+    description: <FormattedText text={translations["portfolio.description5"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription5"]} />,
     image: pulp1, 
     images: [pulp1, pulp2, pulp3, pulp4, pulp5],
   },
   {
-    title: translations["portfolio.title6"],
-    description: translations["portfolio.description6"],
-    deepDescription: translations["portfolio.deepDescription6"],
+    title: <FormattedText text={translations["portfolio.title6"]} />,
+    description: <FormattedText text={translations["portfolio.description6"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription6"]} />,
     image: damian1,
     images: [damian1, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9]
   },
   {
-    title: translations["portfolio.title7"],
-    description: translations["portfolio.description"],
-    deepDescription: translations["portfolio.deepDescription7"],
+    title: <FormattedText text={translations["portfolio.title7"]} />,
+    description: <FormattedText text={translations["portfolio.description"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription7"]} />,
     image: saul1,
     images: [saul1, saul2, saul3],
   },
   {
-    title: translations["portfolio.title8"],
-    description: translations["portfolio.description8"],
-    deepDescription: translations["portfolio.deepDescription8"],
+    title: <FormattedText text={translations["portfolio.title8"]} />,
+    description: <FormattedText text={translations["portfolio.description8"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription8"]} />,
     image: encargo1, 
     images: [encargo1, encargo2, encargo3, encargo4, encargo5],
   },
   {
-    title: translations["portfolio.title9"],
-    description: translations["portfolio.description9"],
-    deepDescription: translations["portfolio.deepDescription9"],
+    title: <FormattedText text={translations["portfolio.title9"]} />,
+    description: <FormattedText text={translations["portfolio.description9"]} />,
+    deepDescription: <FormattedText text={translations["portfolio.deepDescription9"]} />,
     image: ilustraciones21, 
     images: [ilustraciones21, ilustraciones22, ilustraciones23, ilustraciones24, ilustraciones25],
   },     

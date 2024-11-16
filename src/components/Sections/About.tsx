@@ -14,8 +14,8 @@ const About: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-y-4 h-full">
         {!!profileImageSrc && (
-          <div className="flex-shrink-0 mr-20">
-            <div className="relative h-32 w-32 overflow-hidden rounded-2xl md:h-96 md:w-96">
+          <div className="flex-shrink-0 mr-20 w-full md:w-auto flex justify-center">
+            <div className="relative h-80 w-80 overflow-hidden rounded-2xl md:h-96 md:w-96">
               <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
             </div>
           </div>

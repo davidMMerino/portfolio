@@ -68,7 +68,7 @@ const ContactForm: FC = memo(() => {
       />
       <button
         aria-label="Submit contact form"
-        className="w-max rounded-full border-2 border-violet-800 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-violet-800 focus:ring-offset-2 focus:ring-offset-stone-800"
+        className="w-max rounded-full border-2 border-violet-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-violet-800 focus:ring-offset-2 focus:ring-offset-stone-800"
         type="submit">
         {translations["contact.contactForm.button"]}
       </button>
