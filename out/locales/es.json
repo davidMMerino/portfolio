@@ -1,0 +1,90 @@
+
+{
+  "header.about": "Sobre Mí",
+  "header.resume": "Currículum",
+  "header.portfolio": "Portfolio",
+  "header.contact": "Contacto",
+
+  "about.title": "Sobre Mí",
+  "data.about.description": "Hola, soy David Merino, diseñador gráfico con experiencia freelance y formación en programación, apasionado por crear soluciones visuales innovadoras y funcionales. Como freelance, he tenido la libertad de explorar diferentes técnicas y temáticas, adaptándome a las necesidades de cada cliente mientras mantengo mi propia visión artística. La diversidad de mi portafolio refleja no solo mis habilidades técnicas, sino también mi capacidad para contar historias a través de mis ilustraciones.",
+  "data.about.aboutItems.location": "Localidad",
+  "data.about.aboutItems.locationTitle": "Burgos, España",
+  "data.about.aboutItems.age": "Edad",
+  "data.about.aboutItems.ageTitle": "28",
+  "data.about.aboutItems.interests": "Intereses",
+  "data.about.aboutItems.interestsTitle": "Peliculas, arte y libros",
+  "data.about.aboutItems.languages": "Idiomas",
+  "data.about.aboutItems.languagesTitle": "Español & Inglés",
+
+  "resume.education.title": "Educación",
+  "resume.experience.title": "Trabajo",
+  "resume.skills.title": "Habilidades",
+
+  "resume.education.items.1.date": "En Curso",
+  "resume.education.items.1.location": "Escuela de Arte y Diseño, Soria",
+  "resume.education.items.1.title": "Grado Superior en Diseño Gráfico",
+  "resume.education.items.1.content": "Además, he adquirido conocimientos en tipografía, teoría del color, composición visual, diseño UX/UI, creación de identidad de marca, desarrollo de proyectos editoriales y animación 2D. También he trabajado en la producción de materiales impresos y digitales, y he desarrollado habilidades para gestionar proyectos de diseño desde el concepto hasta su finalización.",
+
+  "resume.education.items.2.date": "2024",
+  "resume.education.items.2.location": "Samsung & EOI",
+  "resume.education.items.2.title": "Programación, algoritmos y estructuras de datos en Python para inteligencia artificial.",
+  "resume.education.items.2.content": "Desarrollé una base sólida en programación con Python, incluyendo la creación de algoritmos y estructuras de datos eficientes. También adquirí habilidades para analizar datos complejos utilizando lógica algorítmica y aprendí a planificar programas mediante pseudocódigo y diagramas de flujo para optimizar procesos.",
+
+  "resume.education.items.3.date": "2024",
+  "resume.education.items.3.location": "Samsung & EOI",
+  "resume.education.items.3.title": "Inteligencia Artificial",
+  "resume.education.items.3.content": "Adquirí una comprensión sólida de los fundamentos de la ciencia de datos y el aprendizaje automático. Estudié álgebra lineal, probabilidad y estadística aplicadas a la inteligencia artificial. Aprendí técnicas para procesar datos textuales y a construir redes neuronales profundas utilizando bibliotecas como TensorFlow y Keras para implementar modelos avanzados de inteligencia artificial.",
+
+  "resume.experience.items.1.date": "2020, Presente",
+  "resume.experience.items.1.title": "Ilustrador & Diseñador Gráfico Freelance",
+  "resume.experience.items.1.content": "He trabajado en una variedad de proyectos tanto para particulares como para empresas, gestionando encargos como ilustraciones para retratos, revistas y pósters. Mi experiencia incluye la ilustración y maquetación de libros infantiles y novelas interactivas, así como la creación de elementos visuales para proyectos editoriales. A lo largo de mi carrera como freelance, he gestionado procesos de diseño de principio a fin, asegurando resultados de alta calidad adaptados a las necesidades de los clientes.",
+
+  "resume.skills.groups.1.name": "Diseño Gráfico",
+  "resume.skills.groups.2.name": "Desarrollador Front-End",
+
+  "portfolio.headerText": "Echa un vistazo a algunos de mis trabajos",
+      
+  "portfolio.title1": "Cartel *Festival de Creación Joven*",
+  "portfolio.description1": "Cartel Finalista para el *Festival de Creación Joven.*",
+  "portfolio.deepDescription1": "Este diseño de cartel para el 24º Festival de Creación Joven representa el espíritu de creatividad y participación entre los jóvenes artistas de Soria. La ilustración fusiona el concepto infantil de una marioneta de madera con la idea de la cocina, simbolizando la creatividad y la alegría sin recurrir a las expresiones artísticas tradicionales. Utilizando colores vibrantes y una construcción basada en vectores, el diseño evoca una sensación de originalidad y juego, reflejando el objetivo del festival de inspirar y involucrar a la comunidad en actividades culturales.",
+  
+  "portfolio.title2": "Caperucita Roja",
+  "portfolio.description2": "Serie de ilustraciones para la revista *Pons*",
+  "portfolio.deepDescription2": "Esta serie de ilustraciones reinventa el clásico cuento de Caperucita Roja para la revista Pons, fusionando un estilo oscuro y atmosférico con la inocencia inherente de la historia. Mientras que la obra transmite una sensación de misterio y suspenso, conserva una calidad apta para niños que se ajusta al espíritu original del cuento. A través de colores y sombras cuidadosamente seleccionados, las ilustraciones logran un equilibrio entre los matices más oscuros del relato y su encanto mágico y atemporal.",
+  
+  "portfolio.title3": "Ilustraciones HSSullivan",
+  "portfolio.description3": "Serie de ilustraciones que he ido realizando a lo largo de los años.",
+  "portfolio.deepDescription3": "Esta serie representa una colección de proyectos personales de ilustración que he creado a lo largo de los años, cada uno reflejando mi continua exploración y evolución como artista. Experimentando constantemente con nuevas técnicas y adaptando mi estilo, estas piezas muestran una variedad de enfoques, temas y expresiones visuales. Esta colección no solo documenta mi viaje artístico, sino que también resalta mi compromiso con la innovación y el crecimiento en mi oficio",
+  
+  "portfolio.title4": "Cuento Interactivo",
+  "portfolio.description4": "Proyecto colaborativo en el que realizamos un cuento alternativa.",
+  "portfolio.deepDescription4": "Esta historia interactiva, inspirada en el cuento Donde Viven los Monstruos, ofrece a los lectores un viaje lleno de misterio y múltiples finales posibles. A través de una mezcla de ilustraciones infantiles y ligeramente inquietantes, la historia explora temas como el enfrentarse a lo desconocido, que finalmente se revela como algo amigable. El estilo visual combina texturas de lápiz de colores y tonos apagados para crear una atmósfera acogedora pero llena de suspenso, invitando a los lectores a interactuar con los giros y vueltas de la historia de una manera imaginativa e interactiva.",
+  
+  "portfolio.title5": "*Pulp* Fanzine",
+  "portfolio.description5": "Fanzine realizado en colaboracion con festival cultural.",
+  "portfolio.deepDescription5": "Pulp es un proyecto de fanzine único que combina un diseño de estilo gazeta vintage con una exploración moderna de la cultura cinematográfica. En su interior, los lectores encontrarán contenido diverso, incluyendo una profunda reflexión sobre la representación divina en el cine y un estudio exhaustivo de la obra de Stanley Kubrick. Este fanzine ahonda tanto en el cine histórico como en el contemporáneo, ofreciendo una perspectiva nostálgica pero fresca sobre el séptimo arte. Impreso en papel reciclado con una textura similar a la de un periódico (148 mm x 210 mm), Pulp proporciona una experiencia inmersiva para los cinéfilos, celebrando el legado y la continua evolución del cine.",
+  
+  "portfolio.title6": "*Damian*",
+  "portfolio.description6": "Serie de ilustraciones protagonizadas por *Damian*.",
+  "portfolio.deepDescription6": "Conozcan a Damian, un personaje de dibujos animados que me ha acompañado a lo largo de mi camino como ilustrador. Damian sirve como un lienzo para mostrar mi creatividad y evolución artística. A lo largo de los años, lo he ilustrado en diversas situaciones, cada una destacando un aspecto único de su personalidad, mientras refleja mi propio crecimiento como artista. Desde sus primeros bocetos hasta sus últimas iteraciones, Damian encarna mi continua exploración y refinamiento de la técnica. Espero que disfruten siendo testigos de su desarrollo y transformación a lo largo del tiempo.",
+  
+  "portfolio.title7": "Ilustraciones para la revista *Cine para Todos*.",
+  "portfolio.description7": "Serie de ilustraciones de la serie *Better Call Saul*",
+  "portfolio.deepDescription7": "Esta serie de ilustraciones captura momentos icónicos de la serie de televisión *Better Call Saul*, creada para un artículo en la revista *Cine para Todos*. Cada ilustración profundiza en escenas clave que definen el tono de la serie y sus personajes complejos, destacando temas de ambigüedad moral y transformación. La obra busca transmitir visualmente la tensión y el estilo cinematográfico de la serie, ofreciendo a los fans una nueva perspectiva de escenas memorables, al mismo tiempo que enriquece el análisis profundo de la revista sobre el programa.",
+  
+  "portfolio.title8": "Encargos",
+  "portfolio.description8": "Serie de ilustraciones por encargo",
+  "portfolio.deepDescription8": "Esta selección muestra algunos de mis trabajos profesionales encargados a lo largo de los años. Cada retrato representa una interpretación personal, centrada en los detalles y las expresiones para crear una representación única y auténtica de cada sujeto. Me esfuerzo por hacer que cada pieza sea especial, capturando las características y la personalidad que definen a cada individuo. Muchos de estos encargos fueron creados para creadores de contenido, lo que me permitió dar vida a su presencia y estilo distintivos a través de la ilustración.",
+
+  "portfolio.title9": "Ilustraciones HSSullivan II",
+  "portfolio.description9": "Serie de ilustraciones que he ido realizando a lo largo de los años.",
+  "portfolio.deepDescription9": "Una colección actualizada de mis últimas ilustraciones. Como artista freelance, tengo la libertad de explorar diversas técnicas y temas, adaptándome a las necesidades únicas de cada cliente mientras mantengo mi visión artística. Esta flexibilidad me ha permitido trabajar en una amplia variedad de proyectos, desde caricaturas y retratos hasta ilustraciones complejas para publicaciones y campañas de marketing. La diversidad de este portafolio muestra no solo mis habilidades técnicas, sino también mi capacidad para contar historias a través de mis ilustraciones.",
+  
+  "contact.headerText": "Contacto",
+  "contact.description": "Si estás interesado en posibles colaboraciones o oportunidades laborales, no dudes en contactarme.",
+  
+  "contact.contactForm.name": "Nombre",
+  "contact.contactForm.email": "Email",
+  "contact.contactForm.message": "Mensaje",
+  "contact.contactForm.button": "Enviar Mensaje"
+}

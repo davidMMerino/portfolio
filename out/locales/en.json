@@ -1,0 +1,91 @@
+
+{
+    "header.about": "About",
+    "header.resume": "Resume",
+    "header.portfolio": "Portfolio",
+    "header.contact": "Contact",
+
+    "about.title": "About Me",
+    "data.about.description": "Hi, I'm David Merino, a graphic designer with freelance experience and a background in programming, passionate about creating innovative and functional visual solutions. As a freelancer, I have had the freedom to explore different techniques and themes, adapting to each client's needs while maintaining my own artistic vision. The diversity of my portfolio reflects not only my technical skills but also my ability to tell stories through my illustrations.",
+
+    "data.about.aboutItems.location": "Location",
+    "data.about.aboutItems.locationTitle": "Burgos, Spain",
+    "data.about.aboutItems.age": "Age",
+    "data.about.aboutItems.ageTitle": "28",
+    "data.about.aboutItems.interests": "Interests",
+    "data.about.aboutItems.interestsTitle": "Movies, Art & Books",
+    "data.about.aboutItems.languages": "Languages",
+    "data.about.aboutItems.languagesTitle": "Spanish & English",
+
+    "resume.education.title": "Education",
+    "resume.experience.title": "Work",
+    "resume.skills.title": "Skills",
+
+    "resume.education.items.1.date": "Ongoing",
+    "resume.education.items.1.location": "Art & Design School, Soria",
+    "resume.education.items.1.title": "Bachelor's Degree in Graphic Design",
+    "resume.education.items.1.content": "I have learned to use image and video editing software such as Adobe Photoshop, Illustrator, and Premiere. Additionally, I acquired knowledge in typography, color theory, visual composition, UX/UI design, brand identity creation, editorial project development, and 2D animation. I have also worked on the production of printed and digital materials and developed skills to manage design projects from concept to completion.",
+  
+    "resume.education.items.2.date": "2024",
+    "resume.education.items.2.location": "Samsung & EOI",
+    "resume.education.items.2.title": "Programming, Algorithms, and Data Structures in Python for Artificial Intelligence",
+    "resume.education.items.2.content": "I developed a strong foundation in programming with Python, including creating efficient algorithms and data structures. I also gained skills in analyzing complex data using algorithmic logic and learned how to plan programs through pseudocode and flowcharts to optimize processes.",
+  
+    "resume.education.items.3.date": "2024",
+    "resume.education.items.3.location": "Samsung & EOI",
+    "resume.education.items.3.title": "Artificial Intelligence",
+    "resume.education.items.3.content": "I gained a solid understanding of the fundamentals of data science and machine learning. I studied linear algebra, probability, and statistics applied to AI. I learned techniques for processing textual data and how to build deep neural networks using libraries such as TensorFlow and Keras to implement advanced artificial intelligence models.",
+  
+    "resume.experience.items.1.date": "2020, Present",
+    "resume.experience.items.1.title": "Freelance Designer & Illustrator",
+    "resume.experience.items.1.content": "I have worked on a variety of projects for both individuals and companies, handling commissions such as illustrations for portraits, magazines, and posters. My experience includes illustration and layout for children's books and interactive novels, as well as creating visual assets for editorial projects. Throughout my freelance career, I have managed end-to-end design processes, ensuring high-quality results tailored to client needs.",
+
+    "resume.skills.groups.1.name": "Graphic Design",
+    "resume.skills.groups.2.name": "Front-End Developer",
+
+    "portfolio.headerText": "Check out some of my work",
+    
+    "portfolio.title1": "Young Creation Festival Poster",
+    "portfolio.description1": "Finalist poster for the Young Creation Festival.",
+    "portfolio.deepDescription1": "This poster design for the 24th Young Creation Festival embodies the spirit of creativity and participation among young artists in Soria. The illustration merges the whimsical concept of a wooden puppet with the idea of cooking, symbolizing creativity and joy without relying on traditional artistic expressions. Using vibrant colors and vector-based construction, the design evokes a sense of originality and playfulness, reflecting the festival's aim to inspire and engage the community in cultural activities.",
+    
+    "portfolio.title2": "*Little Red Riding Hood* Story",
+    "portfolio.description2": "Series of illustrations for *Pons* magazine.",
+    "portfolio.deepDescription2": "This illustration series reimagines the classic *Little Red Riding Hood* tale for *Pons* magazine, blending a dark, atmospheric style with the story's inherent innocence. While the artwork conveys a sense of mystery and suspense, it retains a child-friendly quality that aligns with the original fairy tale. Through carefully chosen colors and shading, the illustrations create a balance between the tale's darker undertones and its whimsical, timeless charm.",
+    
+    "portfolio.title3": "HSSullivan Illustrations",
+    "portfolio.description3": "Series of illustrations I have created over the years.",
+    "portfolio.deepDescription3": "This series represents a collection of personal illustration projects I have created over the years, each reflecting my ongoing exploration and evolution as an artist. Constantly experimenting with new techniques and adapting my style, these pieces showcase a variety of approaches, themes, and visual expressions. This collection not only documents my artistic journey but also highlights my commitment to innovation and growth in my craft.",
+    
+    "portfolio.title4": "Interactive Story",
+    "portfolio.description4": "Collaborative project for an interactive story.",
+    "portfolio.deepDescription4": "This interactive story, inspired by the tale *Where the Wild Things Are*, offers readers a journey filled with mystery and multiple possible endings. Through a blend of childlike and slightly eerie illustrations, the story explores themes of confronting the unknown, which ultimately reveals itself as friendly. The visual style combines colored pencil textures and muted colors to create a cozy yet suspenseful atmosphere, inviting readers to engage with the story's twists and turns in an imaginative, interactive way.",
+    
+    "portfolio.title5": "*Pulp* Fanzine",
+    "portfolio.description5": "Fanzine created in collaboration with a cultural festival.",
+    "portfolio.deepDescription5": "*Pulp* is a unique fanzine project that blends a vintage gazette-style layout with a modern exploration of cinematic culture. Inside, readers will find diverse content, including an insightful exploration of divine representation in film and an in-depth study of Stanley Kubricks work. This fanzine delves into both historical and contemporary cinema, offering a nostalgic yet fresh perspective on the seventh art. Printed on recycled paper with a newspaper-like texture (148 mm x 210 mm), *Pulp* provides an immersive experience for cinephiles, celebrating the legacy and ongoing evolution of film.",
+    
+    "portfolio.title6": "*Damian*",
+    "portfolio.description6": "Series of illustrations featuring *Damian.*",
+    "portfolio.deepDescription6": "Meet *Damian*, a cartoon character who has accompanied me throughout my journey as an illustrator. Damian serves as a canvas to showcase my creativity and artistic evolution. Over the years, I've illustrated him in various situations, each one highlighting a unique aspect of his personality while reflecting my own growth as an artist. From his early sketches to his latest iterations, Damian embodies my continuous exploration and refinement of technique. I hope you enjoy witnessing his development and transformation over time.",
+    
+    "portfolio.title7": "Illustrations for *Cine para Todos* Magazine",
+    "portfolio.description7": "Series of illustrations on the show *Better Call Saul.*",
+    "portfolio.deepDescription7": "This series of illustrations captures iconic moments from the television show *Better Call Saul*, created for an article in *Cine para Todos* magazine. Each illustration delves into pivotal scenes that define the show's tone and complex characters, highlighting themes of moral ambiguity and transformation. The artwork aims to visually convey the tension and cinematic style of the series, offering fans a fresh perspective on memorable scenes while enhancing the magazine's in-depth analysis of the show.",
+    
+    "portfolio.title8": "Commissions",
+    "portfolio.description8": "Series of commissioned illustrations.",
+    "portfolio.deepDescription8": "This selection showcases some of my professional commissioned work over the years. Each portrait represents a personal interpretation, focusing on details and expressions to create a unique and authentic representation of each subject. I strive to make every piece special, capturing the unique characteristics and personality that define each individual. Many of these commissions were created for content creators, allowing me to bring their distinctive presence and style to life through illustration.",
+    
+    "portfolio.title9": "HSSullivan Illustrations II",
+    "portfolio.description9": "Series of illustrations I have created over the years.",
+    "portfolio.deepDescription9": "An updated collection of my latest illustrations. As a freelance artist, I have the freedom to explore various techniques and themes, adapting to each client's unique needs while maintaining my artistic vision. This flexibility has allowed me to work on a wide range of projects, from caricatures and portraits to complex illustrations for publications and marketing campaigns. The diversity of this portfolio showcases not only my technical skills but also my ability to tell stories through my illustrations.",
+    
+    "contact.headerText": "Get in touch",
+    "contact.description": "If you are interested in discussing potential collaborations or opportunities, please feel free to contact me.",
+
+    "contact.contactForm.name": "Name",
+    "contact.contactForm.email": "Email",
+    "contact.contactForm.message": "Message",
+    "contact.contactForm.button": "Send Message"
+}
