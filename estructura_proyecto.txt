@@ -1,19 +1,96 @@
 .
 ├── README.md
-├── estructura-proyecto.txt
+├── eslint.config.js
+├── estructura_proyecto.txt
 ├── next-env.d.ts
 ├── next-sitemap.js
+├── next.config.js
+├── out
+│   ├── 404.html
+│   ├── _next
+│   │   ├── JlrQS1yjcR7vL8zT-6QLd
+│   │   └── static
+│   │       ├── JlrQS1yjcR7vL8zT-6QLd
+│   │       │   ├── _buildManifest.js
+│   │       │   └── _ssgManifest.js
+│   │       ├── chunks
+│   │       │   ├── 331.b728efcf2e489dd6.js
+│   │       │   ├── 356.7730b75cf5cf8691.js
+│   │       │   ├── 724-d5f5404f26245498.js
+│   │       │   ├── framework-a6b3d2fb26bce5d1.js
+│   │       │   ├── main-467469c90ad63ca8.js
+│   │       │   ├── pages
+│   │       │   │   ├── _app-a26b4d34c0cb8279.js
+│   │       │   │   ├── _error-fde50cb7f1ab27e0.js
+│   │       │   │   └── index-0c52f8a7b3ec88b7.js
+│   │       │   ├── polyfills-42372ed130431b0a.js
+│   │       │   └── webpack-89367ae285f8dc52.js
+│   │       ├── css
+│   │       │   └── a66747e36457b3f2.css
+│   │       └── media
+│   │           ├── caperucita1.93f29600.jpeg
+│   │           ├── caperucita2.91d60cb4.jpeg
+│   │           ├── caperucita3.667266f6.jpeg
+│   │           ├── caperucita4.83a5ee54.jpeg
+│   │           ├── caperucita5.a5f52e3d.jpeg
+│   │           ├── creacionJoven.c81adc35.jpg
+│   │           ├── cuentoInteractivo.e528b182.jpg
+│   │           ├── damian1.770706f9.jpeg
+│   │           ├── damian2.a327f684.jpg
+│   │           ├── damian3.d7bdb70c.jpg
+│   │           ├── damian4.9d9267e1.jpg
+│   │           ├── damian5.1554f64c.jpg
+│   │           ├── damian6.978c1e35.jpg
+│   │           ├── damian7.0ea10d0b.jpeg
+│   │           ├── damian8.62c6982b.jpg
+│   │           ├── damian9.3455e44d.jpeg
+│   │           ├── encargo1.c2c62852.jpg
+│   │           ├── encargo2.eac1f45b.jpg
+│   │           ├── encargo3.afd0082a.jpg
+│   │           ├── encargo4.8a86ba1a.jpg
+│   │           ├── encargo5.8292cee5.jpg
+│   │           ├── english.690d0468.png
+│   │           ├── heroImageEn.05e70035.png
+│   │           ├── heroImageEs.d94fd066.png
+│   │           ├── ilustraciones11.498408f6.jpeg
+│   │           ├── ilustraciones12.ca36b3d8.jpg
+│   │           ├── ilustraciones13.059992b1.jpeg
+│   │           ├── ilustraciones14.637428c0.jpeg
+│   │           ├── ilustraciones15.5a5366af.jpeg
+│   │           ├── ilustraciones21.3bb04e55.jpg
+│   │           ├── ilustraciones22.d4fb272c.jpg
+│   │           ├── ilustraciones23.853a5fe4.jpg
+│   │           ├── ilustraciones24.9df78596.jpg
+│   │           ├── ilustraciones25.93604875.jpg
+│   │           ├── profileImage.10829706.png
+│   │           ├── pulp1.2cc2cd99.jpg
+│   │           ├── pulp2.110569d4.jpg
+│   │           ├── pulp3.ed65c18b.jpg
+│   │           ├── pulp4.769e41ae.jpg
+│   │           ├── pulp5.6171fda4.jpg
+│   │           ├── saul1.5239756a.jpg
+│   │           ├── saul2.b84415fd.jpg
+│   │           ├── saul3.dadbc2d6.jpg
+│   │           └── spanish.13cc7066.png
+│   ├── damianIcon.ico
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── locales
+│   │   ├── en.json
+│   │   └── es.json
+│   └── site.webmanifest
 ├── package.json
 ├── postcss.config.js
 ├── public
 │   ├── damianIcon.ico
 │   ├── favicon.ico
 │   ├── locales
-│   │   ├── en.json // texto traducido al ingles
-│   │   └── es.json // texto traducido al español
+│   │   ├── en.json
+│   │   └── es.json
 │   └── site.webmanifest
 ├── src
-│   ├── LanguageSelector.tsx // const LanguageSelector
+│   ├── FormattedText.tsx
+│   ├── LanguageSelector.tsx
 │   ├── components
 │   │   ├── Base.tsx
 │   │   ├── Icon
@@ -36,7 +113,7 @@
 │   │   │   │   ├── ContactForm.tsx
 │   │   │   │   └── index.tsx
 │   │   │   ├── Footer.tsx
-│   │   │   ├── Header.tsx // const {translations} = useLanguage(); |    { id: SectionId.About, label: translations.about }, | <LanguageSelector />
+│   │   │   ├── Header.tsx
 │   │   │   ├── Hero.tsx
 │   │   │   ├── Modal.tsx
 │   │   │   ├── Portfolio.tsx
@@ -48,7 +125,7 @@
 │   │   └── Socials.tsx
 │   ├── config.ts
 │   ├── context
-│   │   └── LanguageContext.tsx // export LanguageProvider | interface LanguageContextType | export const useLanguage
+│   │   └── LanguageContext.tsx
 │   ├── data
 │   │   ├── data.tsx
 │   │   └── dataDef.ts
@@ -59,7 +136,7 @@
 │   │   ├── useNavObserver.tsx
 │   │   └── useWindow.ts
 │   ├── images
-│   │   ├── english.png //en flag LanguageSelector
+│   │   ├── english.png
 │   │   ├── heroImageEn.png
 │   │   ├── heroImageEs.png
 │   │   ├── portfolio
@@ -109,16 +186,18 @@
 │   │   │       ├── pulp4.jpg
 │   │   │       └── pulp5.jpg
 │   │   ├── profileImage.png
-│   │   └── spanish.png // es flag LanguageSelector
+│   │   └── spanish.png
 │   ├── pages
-│   │   ├── _app.tsx //<LanguageProvider>
+│   │   ├── _app.tsx
 │   │   ├── _document.tsx
 │   │   ├── api
-│   │   └── index.tsx //archivo principal
+│   │   │   └── contact.ts
+│   │   └── index.tsx
 │   └── types.d.ts
 ├── stylelint.config.js
 ├── tailwind.config.js
 ├── tsconfig.json
-└── tsconfig.tsbuildinfo
+├── tsconfig.tsbuildinfo
+└── yarn.lock
 
-23 directories, 99 files
+33 directories, 168 files

@@ -19,7 +19,7 @@ const Hero: FC = memo(() => {
           alt="Hero Section"
           width={800}
           height={600}
-          className="object-contain h-1/3 w-1/3 sm:h-2/4 sm:w-2/4"
+          className="object-contain h-3/4 w-3/4 sm:h-1/2 sm:w-1/2"
           placeholder="blur"
           priority
           src={imageSrc}

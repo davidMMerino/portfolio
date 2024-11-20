@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
+import { ModalProps } from '../../data/dataDef';
 
-import {ModalProps} from '../../data/dataDef';
-
-const Modal: React.FC<ModalProps> = React.memo(({item, onClose}) => {
-  const {title, deepDescription, images} = item;
+const Modal: React.FC<ModalProps> = React.memo(({ item, onClose }) => {
+  const { title, deepDescription, images } = item;
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [dragStart, setDragStart] = useState<number | null>(null);
@@ -41,12 +40,23 @@ const Modal: React.FC<ModalProps> = React.memo(({item, onClose}) => {
     setDragStart(null); // Resetear el valor de arrastre
   };
 
+  // Deshabilitar el desplazamiento de la página cuando el modal esté abierto
+  useEffect(() => {
+    // Desactivar el scroll de la página
+    document.body.style.overflow = 'hidden';
+
+    // Limpiar el efecto al cerrar el modal
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
       onClick={handleBackgroundClick}>
       {/* Contenedor del modal */}
-      <div className="relative w-3/4 max-w-3xl p-6 bg-white rounded-lg">
+      <div className="relative w-3/4 max-w-3xl p-6 bg-white rounded-lg max-h-[80vh] overflow-hidden">
         {/* Título y descripción */}
         <h3 className="text-2xl font-bold mb-4">{title}</h3>
         <p className="mb-4">{deepDescription}</p>
