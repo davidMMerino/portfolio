@@ -8,17 +8,15 @@ const Modal: React.FC<ModalProps> = React.memo(({ item, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [dragStart, setDragStart] = useState<number | null>(null);
 
-  // Verificar si `images` está definido y tiene al menos una imagen
+  // Si `images` no está definido o no tiene elementos, evita errores
   if (!images || images.length === 0) return null;
 
-  // Función para manejar el clic en el fondo
   const handleBackgroundClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.currentTarget === e.target) {
       onClose();
     }
   };
 
-  // Manejo de drag-and-drop
   const handleDragStart = (e: React.TouchEvent | React.MouseEvent) => {
     const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     setDragStart(clientX);
@@ -31,21 +29,16 @@ const Modal: React.FC<ModalProps> = React.memo(({ item, onClose }) => {
     const dragDistance = clientX - dragStart;
 
     if (dragDistance > 50) {
-      // Desplazarse a la izquierda si el arrastre fue positivo
       setCurrentImageIndex(currentIndex => (currentIndex - 1 + images.length) % images.length);
     } else if (dragDistance < -50) {
-      // Desplazarse a la derecha si el arrastre fue negativo
       setCurrentImageIndex(currentIndex => (currentIndex + 1) % images.length);
     }
-    setDragStart(null); // Resetear el valor de arrastre
+    setDragStart(null);
   };
 
-  // Deshabilitar el desplazamiento de la página cuando el modal esté abierto
   useEffect(() => {
-    // Desactivar el scroll de la página
     document.body.style.overflow = 'hidden';
 
-    // Limpiar el efecto al cerrar el modal
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -57,42 +50,49 @@ const Modal: React.FC<ModalProps> = React.memo(({ item, onClose }) => {
       onClick={handleBackgroundClick}>
       {/* Contenedor del modal */}
       <div className="relative w-3/4 max-w-3xl p-6 bg-white rounded-lg max-h-[80vh] overflow-hidden">
-        {/* Título y descripción */}
-        <h3 className="text-2xl font-bold mb-4">{title}</h3>
-        <p className="mb-4">{deepDescription}</p>
+        {/* Contenedor desplazable */}
+        <div className="overflow-y-auto max-h-[70vh] no-scrollbar">
+          {/* Título y descripción */}
+          <h3 className="text-2xl font-bold mb-4">{title}</h3>
+          <p className="mb-4">{deepDescription}</p>
 
-        {/* Imagen principal */}
-        <div
-          className="flex justify-center mb-4"
-          onMouseDown={handleDragStart}
-          onMouseUp={handleDragEnd}
-          onTouchEnd={handleDragEnd}
-          onTouchStart={handleDragStart}>
-          <Image
-            alt={`${title} main image`}
-            className="object-contain max-h-[60vh] max-w-full"
-            height={400}
-            src={images[currentImageIndex]}
-            width={600}
-          />
-        </div>
+          {/* Imagen principal */}
+          <div
+            className="flex justify-center mb-4"
+            onMouseDown={handleDragStart}
+            onMouseUp={handleDragEnd}
+            onTouchEnd={handleDragEnd}
+            onTouchStart={handleDragStart}>
+            <Image
+              alt={`${title} main image`}
+              className="object-contain max-h-[60vh] max-w-full"
+              height={400}
+              src={images[currentImageIndex]}
+              width={600}
+            />
+          </div>
 
-        {/* Carrusel de imágenes en miniatura */}
-        <div className="flex justify-center gap-4 mt-4">
-          {images.map((imageSrc, idx) => (
-            <div
-              className={`cursor-pointer rounded-lg overflow-hidden flex items-center justify-center w-20 h-16 ${idx === currentImageIndex ? 'border-2 border-blue-500' : ''}`}
-              key={idx}
-              onClick={() => setCurrentImageIndex(idx)}>
-              <Image
-                alt={`${title} thumbnail ${idx + 1}`}
-                className="object-cover"
-                height={60}
-                src={imageSrc}
-                width={80}
-              />
+          {/* Condicional: Renderizar barra lateral si hay más de una imagen */}
+          {images.length > 1 && (
+            <div className="flex justify-center gap-4 mt-4">
+              {images.map((imageSrc, idx) => (
+                <div
+                  className={`cursor-pointer rounded-lg overflow-hidden flex items-center justify-center w-20 h-16 ${
+                    idx === currentImageIndex ? 'border-2 border-blue-500' : ''
+                  }`}
+                  key={idx}
+                  onClick={() => setCurrentImageIndex(idx)}>
+                  <Image
+                    alt={`${title} thumbnail ${idx + 1}`}
+                    className="object-cover"
+                    height={60}
+                    src={imageSrc}
+                    width={80}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
