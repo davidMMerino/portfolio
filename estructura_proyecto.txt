@@ -80,6 +80,12 @@
 │   │   └── es.json
 │   └── site.webmanifest
 ├── package.json
+├── pages
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   ├── api
+│   │   └── contact.ts
+│   └── index.tsx
 ├── postcss.config.js
 ├── public
 │   ├── damianIcon.ico
@@ -187,12 +193,6 @@
 │   │   │       └── pulp5.jpg
 │   │   ├── profileImage.png
 │   │   └── spanish.png
-│   ├── pages
-│   │   ├── _app.tsx
-│   │   ├── _document.tsx
-│   │   ├── api
-│   │   │   └── contact.ts
-│   │   └── index.tsx
 │   └── types.d.ts
 ├── stylelint.config.js
 ├── tailwind.config.js
