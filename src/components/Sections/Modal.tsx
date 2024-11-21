@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
-import { ModalProps } from '../../data/dataDef';
+import React, {useState, useEffect} from 'react';
+import {ModalProps} from '../../data/dataDef';
 
-const Modal: React.FC<ModalProps> = React.memo(({ item, onClose }) => {
-  const { title, deepDescription, images } = item;
+const Modal: React.FC<ModalProps> = React.memo(({item, onClose}) => {
+  const {title, deepDescription, images} = item;
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [dragStart, setDragStart] = useState<number | null>(null);

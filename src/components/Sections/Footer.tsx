@@ -4,7 +4,6 @@ import {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
-
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
     <div className="absolute inset-x-0 -top-4 flex justify-center sm:-top-6">

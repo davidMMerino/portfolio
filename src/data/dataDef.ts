@@ -21,7 +21,7 @@ export interface HomepageMeta {
  * Hero section
  */
 export interface Hero {
-  imageSrc: { en: string; es: string};
+  imageSrc: {en: string; es: string};
   actions: HeroActionItem[];
 }
 
@@ -139,7 +139,7 @@ export interface Social {
 }
 
 /**
- * Modal 
+ * Modal
  */
 export interface ModalProps {
   item: PortfolioItem;
@@ -147,7 +147,7 @@ export interface ModalProps {
 }
 
 /**
- * Language 
+ * Language
  */
 export interface LanguageSelectorProps {
   language: 'en' | 'es';

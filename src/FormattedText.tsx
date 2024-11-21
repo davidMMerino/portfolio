@@ -38,4 +38,3 @@ const FormattedText: React.FC<FormattedTextProps> = React.memo(({text}) => {
 });
 
 export default FormattedText;
-

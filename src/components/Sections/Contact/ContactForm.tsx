@@ -1,5 +1,5 @@
-import { FC, memo, useCallback, useMemo, useState } from 'react';
-import { useLanguage } from '../../../context/LanguageContext';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
+import {useLanguage} from '../../../context/LanguageContext';
 
 interface FormData {
   name: string;
@@ -8,7 +8,7 @@ interface FormData {
 }
 
 const ContactForm: FC = memo(() => {
-  const { translations } = useLanguage();
+  const {translations} = useLanguage();
   const defaultData = useMemo(
     () => ({
       name: '',
@@ -24,11 +24,11 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const { name, value } = event.target;
+      const {name, value} = event.target;
 
-      const fieldData: Partial<FormData> = { [name]: value };
+      const fieldData: Partial<FormData> = {[name]: value};
 
-      setData({ ...data, ...fieldData });
+      setData({...data, ...fieldData});
     },
     [data],
   );
@@ -51,14 +51,14 @@ const ContactForm: FC = memo(() => {
         const result = await response.json();
 
         if (result.success) {
-          setFeedback(translations["contact.contactForm.successMessage"]); // Mensaje de éxito
+          setFeedback(translations['contact.contactForm.successMessage']); // Mensaje de éxito
           setData(defaultData); // Resetea el formulario
         } else {
-          setFeedback(translations["contact.contactForm.errorMessage"] || `Error: ${result.message}`);
+          setFeedback(translations['contact.contactForm.errorMessage'] || `Error: ${result.message}`);
         }
       } catch (error) {
         console.error('Error al enviar el mensaje:', error);
-        setFeedback(translations["contact.contactForm.errorMessage"]);
+        setFeedback(translations['contact.contactForm.errorMessage']);
       } finally {
         setLoading(false);
       }
@@ -75,7 +75,7 @@ const ContactForm: FC = memo(() => {
         className={inputClasses}
         name="name"
         onChange={onChange}
-        placeholder={translations["contact.contactForm.name"]}
+        placeholder={translations['contact.contactForm.name']}
         required
         type="text"
         value={data.name}
@@ -85,7 +85,7 @@ const ContactForm: FC = memo(() => {
         className={inputClasses}
         name="email"
         onChange={onChange}
-        placeholder={translations["contact.contactForm.email"]}
+        placeholder={translations['contact.contactForm.email']}
         required
         type="email"
         value={data.email}
@@ -95,7 +95,7 @@ const ContactForm: FC = memo(() => {
         maxLength={250}
         name="message"
         onChange={onChange}
-        placeholder={translations["contact.contactForm.message"]}
+        placeholder={translations['contact.contactForm.message']}
         required
         rows={6}
         value={data.message}
@@ -104,16 +104,13 @@ const ContactForm: FC = memo(() => {
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-violet-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-violet-800 focus:ring-offset-2 focus:ring-offset-stone-800"
         type="submit"
-        disabled={loading}
-      >
+        disabled={loading}>
         {loading
-          ? translations["contact.contactForm.loading"] || 'Enviando...'
-          : translations["contact.contactForm.button"]}
+          ? translations['contact.contactForm.loading'] || 'Enviando...'
+          : translations['contact.contactForm.button']}
       </button>
       {feedback && (
-        <p className={`text-sm ${feedback.includes('Error') ? 'text-red-500' : 'text-green-500'}`}>
-          {feedback}
-        </p>
+        <p className={`text-sm ${feedback.includes('Error') ? 'text-red-500' : 'text-green-500'}`}>{feedback}</p>
       )}
     </form>
   );

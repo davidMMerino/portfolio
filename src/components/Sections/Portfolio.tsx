@@ -5,17 +5,17 @@ import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 're
 
 import {isMobile} from '../../config';
 import {getPortfolioItems, SectionId} from '../../data/data';
-import { useLanguage } from '../../context/LanguageContext';
+import {useLanguage} from '../../context/LanguageContext';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
-import Modal from './Modal'
+import Modal from './Modal';
 
 const Portfolio: FC = memo(() => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const { translations } = useLanguage();
+  const {translations} = useLanguage();
 
   const portfolioItems = getPortfolioItems(translations);
 
@@ -28,29 +28,21 @@ const Portfolio: FC = memo(() => {
     setSelectedItem(null);
     setIsModalOpen(false);
   };
-  
+
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">{translations["portfolio.headerText"]}</h2>
+        <h2 className="self-center text-xl font-bold text-white">{translations['portfolio.headerText']}</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
             return (
-              <div className="pb-6" 
-              key={`${title}-${index}`}
-              onClick={() => openModal(item)}
-              >
+              <div className="pb-6" key={`${title}-${index}`} onClick={() => openModal(item)}>
                 <div
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image 
-                    alt="Portfolio image" 
-                    className="h-full w-full" 
-                    placeholder="blur" 
-                    src={image} 
-                  />
+                  <Image alt="Portfolio image" className="h-full w-full" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -58,9 +50,7 @@ const Portfolio: FC = memo(() => {
           })}
         </div>
       </div>
-      {isModalOpen && selectedItem && (
-        <Modal item={selectedItem} onClose={closeModal} />
-      )}
+      {isModalOpen && selectedItem && <Modal item={selectedItem} onClose={closeModal} />}
     </Section>
   );
 });

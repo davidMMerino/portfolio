@@ -1,10 +1,4 @@
-import {
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
+import {ArrowDownTrayIcon, BuildingOffice2Icon, CalendarIcon, MapIcon, SparklesIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -51,7 +45,7 @@ import ilustraciones22 from '../images/portfolio/ilustraciones/ilustraciones22.j
 import ilustraciones23 from '../images/portfolio/ilustraciones/ilustraciones23.jpg';
 import ilustraciones24 from '../images/portfolio/ilustraciones/ilustraciones24.jpg';
 import ilustraciones25 from '../images/portfolio/ilustraciones/ilustraciones25.jpg';
-import profileImage from '../images/profileImage.png'
+import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
 import {
@@ -110,15 +104,30 @@ export const heroData: Hero = {
 /**
  * About section
  */
-export const aboutData = (translations: any): About  => ({
-
+export const aboutData = (translations: any): About => ({
   profileImageSrc: profileImage,
-  description: translations["data.about.description"],
+  description: translations['data.about.description'],
   aboutItems: [
-    {label: translations["data.about.aboutItems.location"], text: translations["data.about.aboutItems.locationTitle"], Icon: MapIcon},
-    {label: translations["data.about.aboutItems.age"], text: translations["data.about.aboutItems.ageTitle"], Icon: CalendarIcon},
-    {label: translations["data.about.aboutItems.interests"], text: translations["data.about.aboutItems.interestsTitle"], Icon: SparklesIcon},
-    {label: translations["data.about.aboutItems.languages"], text: translations["data.about.aboutItems.languagesTitle"], Icon: BuildingOffice2Icon},
+    {
+      label: translations['data.about.aboutItems.location'],
+      text: translations['data.about.aboutItems.locationTitle'],
+      Icon: MapIcon,
+    },
+    {
+      label: translations['data.about.aboutItems.age'],
+      text: translations['data.about.aboutItems.ageTitle'],
+      Icon: CalendarIcon,
+    },
+    {
+      label: translations['data.about.aboutItems.interests'],
+      text: translations['data.about.aboutItems.interestsTitle'],
+      Icon: SparklesIcon,
+    },
+    {
+      label: translations['data.about.aboutItems.languages'],
+      text: translations['data.about.aboutItems.languagesTitle'],
+      Icon: BuildingOffice2Icon,
+    },
   ],
 });
 
@@ -127,7 +136,7 @@ export const aboutData = (translations: any): About  => ({
  */
 export const getSkills = (translations: any): SkillGroup[] => [
   {
-    name: translations["resume.skills.groups.1.name"],
+    name: translations['resume.skills.groups.1.name'],
     skills: [
       {
         name: 'Adobe Illustrator',
@@ -152,7 +161,7 @@ export const getSkills = (translations: any): SkillGroup[] => [
     ],
   },
   {
-    name: translations["resume.skills.groups.2.name"],
+    name: translations['resume.skills.groups.2.name'],
     skills: [
       {
         name: 'Javascript',
@@ -174,72 +183,70 @@ export const getSkills = (translations: any): SkillGroup[] => [
  * Portfolio section
  */
 
-
-
 export const getPortfolioItems = (translations: any): PortfolioItem[] => [
   {
-    title: <FormattedText text={translations["portfolio.title1"]} />,
-    description: <FormattedText text={translations["portfolio.description1"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription1"]} />,
+    title: <FormattedText text={translations['portfolio.title1']} />,
+    description: <FormattedText text={translations['portfolio.description1']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription1']} />,
     image: creacionJoven,
     images: [creacionJoven],
   },
   {
-    title: <FormattedText text={translations["portfolio.title2"]} />,
-    description: <FormattedText text={translations["portfolio.description2"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription2"]} />,
+    title: <FormattedText text={translations['portfolio.title2']} />,
+    description: <FormattedText text={translations['portfolio.description2']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription2']} />,
     image: caperucita1,
     images: [caperucita1, caperucita2, caperucita3, caperucita4, caperucita5],
   },
   {
-    title: <FormattedText text={translations["portfolio.title3"]} />,
-    description: <FormattedText text={translations["portfolio.description3"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription3"]} />,
-    image: ilustraciones11, 
+    title: <FormattedText text={translations['portfolio.title3']} />,
+    description: <FormattedText text={translations['portfolio.description3']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription3']} />,
+    image: ilustraciones11,
     images: [ilustraciones11, ilustraciones12, ilustraciones13, ilustraciones14, ilustraciones15],
   },
   {
-    title: <FormattedText text={translations["portfolio.title4"]} />,
-    description: <FormattedText text={translations["portfolio.description4"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription4"]} />,
+    title: <FormattedText text={translations['portfolio.title4']} />,
+    description: <FormattedText text={translations['portfolio.description4']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription4']} />,
     image: cuentoInteractivo,
     images: [cuentoInteractivo],
   },
   {
-    title: <FormattedText text={translations["portfolio.title5"]} />,
-    description: <FormattedText text={translations["portfolio.description5"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription5"]} />,
-    image: pulp1, 
+    title: <FormattedText text={translations['portfolio.title5']} />,
+    description: <FormattedText text={translations['portfolio.description5']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription5']} />,
+    image: pulp1,
     images: [pulp1, pulp2, pulp3, pulp4, pulp5],
   },
   {
-    title: <FormattedText text={translations["portfolio.title6"]} />,
-    description: <FormattedText text={translations["portfolio.description6"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription6"]} />,
+    title: <FormattedText text={translations['portfolio.title6']} />,
+    description: <FormattedText text={translations['portfolio.description6']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription6']} />,
     image: damian1,
-    images: [damian1, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9]
+    images: [damian1, damian2, damian3, damian4, damian5, damian6, damian7, damian8, damian9],
   },
   {
-    title: <FormattedText text={translations["portfolio.title7"]} />,
-    description: <FormattedText text={translations["portfolio.description"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription7"]} />,
+    title: <FormattedText text={translations['portfolio.title7']} />,
+    description: <FormattedText text={translations['portfolio.description']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription7']} />,
     image: saul1,
     images: [saul1, saul2, saul3],
   },
   {
-    title: <FormattedText text={translations["portfolio.title8"]} />,
-    description: <FormattedText text={translations["portfolio.description8"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription8"]} />,
-    image: encargo1, 
+    title: <FormattedText text={translations['portfolio.title8']} />,
+    description: <FormattedText text={translations['portfolio.description8']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription8']} />,
+    image: encargo1,
     images: [encargo1, encargo2, encargo3, encargo4, encargo5],
   },
   {
-    title: <FormattedText text={translations["portfolio.title9"]} />,
-    description: <FormattedText text={translations["portfolio.description9"]} />,
-    deepDescription: <FormattedText text={translations["portfolio.deepDescription9"]} />,
-    image: ilustraciones21, 
+    title: <FormattedText text={translations['portfolio.title9']} />,
+    description: <FormattedText text={translations['portfolio.description9']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription9']} />,
+    image: ilustraciones21,
     images: [ilustraciones21, ilustraciones22, ilustraciones23, ilustraciones24, ilustraciones25],
-  },     
+  },
 ];
 
 /**
@@ -247,29 +254,31 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
  */
 export const getEducation = (translations: any): TimelineItem[] => [
   {
-    date: translations["resume.education.items.1.date"],
-    location: translations["resume.education.items.1.location"],
-    title: translations["resume.education.items.1.title"],
-    content: translations["resume.education.items.1.content"],
+    date: translations['resume.education.items.1.date'],
+    location: translations['resume.education.items.1.location'],
+    title: translations['resume.education.items.1.title'],
+    content: translations['resume.education.items.1.content'],
   },
   {
-    date: translations["resume.education.items.2.date"],
-    location: translations["resume.education.items.2.location"],
-    title: translations["resume.education.items.2.title"],
-    content: translations["resume.education.items.2.content"],},
+    date: translations['resume.education.items.2.date'],
+    location: translations['resume.education.items.2.location'],
+    title: translations['resume.education.items.2.title'],
+    content: translations['resume.education.items.2.content'],
+  },
   {
-    date: translations["resume.education.items.3.date"],
-    location: translations["resume.education.items.3.location"],
-    title: translations["resume.education.items.3.title"],
-    content: translations["resume.education.items.3.content"],},
+    date: translations['resume.education.items.3.date'],
+    location: translations['resume.education.items.3.location'],
+    title: translations['resume.education.items.3.title'],
+    content: translations['resume.education.items.3.content'],
+  },
 ];
 
 export const getExperience = (translations: any): TimelineItem[] => [
   {
-    date: translations["resume.experience.items.1.date"],
-    location: translations["resume.experience.items.1.location"],
-    title: translations["resume.experience.items.1.title"],
-    content: translations["resume.experience.items.1.content"],
+    date: translations['resume.experience.items.1.date'],
+    location: translations['resume.experience.items.1.location'],
+    title: translations['resume.experience.items.1.title'],
+    content: translations['resume.experience.items.1.content'],
   },
 ];
 
@@ -279,7 +288,8 @@ export const getExperience = (translations: any): TimelineItem[] => [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'If you are interested in discussing potential collaborations or opportunities, please feel free to contact me.',
+  description:
+    'If you are interested in discussing potential collaborations or opportunities, please feel free to contact me.',
   items: [
     {
       type: ContactType.Email,

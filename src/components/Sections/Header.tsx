@@ -1,12 +1,12 @@
-import { Dialog, Transition } from '@headlessui/react';
-import { Bars3BottomRightIcon } from '@heroicons/react/24/outline';
+import {Dialog, Transition} from '@headlessui/react';
+import {Bars3BottomRightIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
-import { FC, Fragment, memo, useCallback, useState } from 'react';
+import {FC, Fragment, memo, useCallback, useState} from 'react';
 import LanguageSelector from '../../LanguageSelector';
-import { SectionId } from '../../data/data';
-import { useNavObserver } from '../../hooks/useNavObserver'; // Asegúrate de que la ruta sea correcta
-import { useLanguage } from '../../context/LanguageContext'
+import {SectionId} from '../../data/data';
+import {useNavObserver} from '../../hooks/useNavObserver'; // Asegúrate de que la ruta sea correcta
+import {useLanguage} from '../../context/LanguageContext';
 
 export const headerID = 'headerNav';
 
@@ -14,47 +14,39 @@ const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const { translations } = useLanguage();
+  const {translations} = useLanguage();
 
   const navSections = [
-    { id: SectionId.About, label: translations["header.about"] },
-    { id: SectionId.Resume, label: translations["header.resume"] },
-    { id: SectionId.Portfolio, label: translations["header.portfolio"] },
-    { id: SectionId.Contact, label: translations["header.contact"] },
+    {id: SectionId.About, label: translations['header.about']},
+    {id: SectionId.Resume, label: translations['header.resume']},
+    {id: SectionId.Portfolio, label: translations['header.portfolio']},
+    {id: SectionId.Contact, label: translations['header.contact']},
   ];
 
   // Hook personalizado para observar las secciones en el viewport y actualizar `currentSection`
-  useNavObserver(
-    navSections.map(section => `#${section.id}`).join(','),
-    setCurrentSection
-  );
+  useNavObserver(navSections.map(section => `#${section.id}`).join(','), setCurrentSection);
 
   const toggleOpen = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
   return (
     <>
       {/* Pasamos el idioma como prop a MobileNav */}
-      <MobileNav
-        currentSection={currentSection}
-        navSections={navSections}
-        isOpen={isOpen}
-        toggleOpen={toggleOpen}
-      />
-      
+      <MobileNav currentSection={currentSection} navSections={navSections} isOpen={isOpen} toggleOpen={toggleOpen} />
+
       <DesktopNav currentSection={currentSection} navSections={navSections} />
-      
+
       {!isOpen && (
         <div className="fixed right-4 top-1 z-50 sm:block hidden">
           {/* Asegúrate de pasar el idioma actual correctamente */}
-          <LanguageSelector visible = { true }/>
+          <LanguageSelector visible={true} />
         </div>
       )}
     </>
   );
 });
 
-const DesktopNav: FC<{ navSections: { id: SectionId; label: string }[]; currentSection: SectionId | null }> = memo(
-  ({ navSections, currentSection }) => {
+const DesktopNav: FC<{navSections: {id: SectionId; label: string}[]; currentSection: SectionId | null}> = memo(
+  ({navSections, currentSection}) => {
     const baseClass =
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-800 sm:hover:text-violet-800 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-violet-800');
@@ -63,7 +55,7 @@ const DesktopNav: FC<{ navSections: { id: SectionId; label: string }[]; currentS
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
-          {navSections.map(({ id, label }) => (
+          {navSections.map(({id, label}) => (
             <NavItem
               activeClass={activeClass}
               current={id === currentSection}
@@ -80,11 +72,11 @@ const DesktopNav: FC<{ navSections: { id: SectionId; label: string }[]; currentS
 );
 
 const MobileNav: FC<{
-  navSections: { id: SectionId; label: string }[]; 
+  navSections: {id: SectionId; label: string}[];
   currentSection: SectionId | null;
   isOpen: boolean;
   toggleOpen: () => void;
-}> = memo(({ navSections, currentSection, isOpen, toggleOpen }) => {
+}> = memo(({navSections, currentSection, isOpen, toggleOpen}) => {
   const baseClass =
     'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-800';
   const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
@@ -121,7 +113,7 @@ const MobileNav: FC<{
             leaveTo="-translate-x-full">
             <div className="relative w-4/5 bg-stone-800 flex flex-col justify-between h-full">
               <nav className="mt-5 flex flex-col gap-y-2 px-2">
-                {navSections.map(({ id, label }) => (
+                {navSections.map(({id, label}) => (
                   <NavItem
                     activeClass={activeClass}
                     current={id === currentSection}
@@ -135,7 +127,7 @@ const MobileNav: FC<{
               </nav>
               <div className="mt-auto p-4 border-t border-gray-700">
                 {/* También pasamos el idioma correcto */}
-                <LanguageSelector visible={true}/>
+                <LanguageSelector visible={true} />
               </div>
             </div>
           </Transition.Child>
@@ -152,7 +144,7 @@ const NavItem: FC<{
   activeClass: string;
   inactiveClass: string;
   onClick?: () => void;
-}> = memo(({ section, label, current, inactiveClass, activeClass, onClick }) => {
+}> = memo(({section, label, current, inactiveClass, activeClass, onClick}) => {
   return (
     <Link
       className={classNames(current ? activeClass : inactiveClass)}
