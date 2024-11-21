@@ -84,7 +84,10 @@
   "contact.description": "Si estás interesado en posibles colaboraciones o oportunidades laborales, no dudes en contactarme.",
   
   "contact.contactForm.name": "Nombre",
-  "contact.contactForm.email": "Email",
+  "contact.contactForm.email": "Correo Electrónico",
   "contact.contactForm.message": "Mensaje",
-  "contact.contactForm.button": "Enviar Mensaje"
+  "contact.contactForm.button": "Enviar",
+  "contact.contactForm.loading": "Enviando...",
+  "contact.contactForm.successMessage": "Mensaje enviado correctamente. ¡Gracias por contactarnos!",
+  "contact.contactForm.errorMessage": "Hubo un error al enviar el mensaje. Inténtalo nuevamente."
 }

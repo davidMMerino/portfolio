@@ -87,5 +87,8 @@
     "contact.contactForm.name": "Name",
     "contact.contactForm.email": "Email",
     "contact.contactForm.message": "Message",
-    "contact.contactForm.button": "Send Message"
+    "contact.contactForm.button": "Send",
+    "contact.contactForm.loading": "Sending...",
+    "contact.contactForm.successMessage": "Message sent successfully. Thank you for contacting us!",
+    "contact.contactForm.errorMessage": "There was an error sending the message. Please try again."
 }
