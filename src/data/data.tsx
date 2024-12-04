@@ -6,8 +6,13 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import BehanceIcon from '../components/Icon/BehanceIcon';
 import heroImageEnglish from '../images/heroImageEn.png';
 import heroImageSpanish from '../images/heroImageEs.png';
-import creacionJoven from '../images/portfolio/creacionJoven.jpg';
-import cuentoInteractivo from '../images/portfolio/cuentoInteractivo.jpg';
+import creacionJoven1 from '../images/portfolio/creacion/creacionJoven.jpg';
+import creacionJoven2 from '../images/portfolio/creacion/creacionJovenBoceto.jpg';
+import creacionJoven3 from '../images/portfolio/creacion/creacionJovenMockup.jpg';
+import bestias1 from '../images/portfolio/bestias/bestiasPortada.jpg';
+import bestias2 from '../images/portfolio/bestias/bestiasNico.jpg';
+import bestias3 from '../images/portfolio/bestias/bestiasPuzzle.jpg';
+import bestias4 from '../images/portfolio/bestias/bestiasPagina.jpg';
 import ilustraciones11 from '../images/portfolio/ilustraciones/ilustraciones11.jpeg';
 import ilustraciones12 from '../images/portfolio/ilustraciones/ilustraciones12.jpg';
 import ilustraciones13 from '../images/portfolio/ilustraciones/ilustraciones13.jpeg';
@@ -188,8 +193,8 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     title: <FormattedText text={translations['portfolio.title1']} />,
     description: <FormattedText text={translations['portfolio.description1']} />,
     deepDescription: <FormattedText text={translations['portfolio.deepDescription1']} />,
-    image: creacionJoven,
-    images: [creacionJoven],
+    image: creacionJoven1,
+    images: [creacionJoven1, creacionJoven2, creacionJoven3],
   },
   {
     title: <FormattedText text={translations['portfolio.title2']} />,
@@ -209,8 +214,8 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     title: <FormattedText text={translations['portfolio.title4']} />,
     description: <FormattedText text={translations['portfolio.description4']} />,
     deepDescription: <FormattedText text={translations['portfolio.deepDescription4']} />,
-    image: cuentoInteractivo,
-    images: [cuentoInteractivo],
+    image: bestias1,
+    images: [bestias1, bestias2, bestias3, bestias4],
   },
   {
     title: <FormattedText text={translations['portfolio.title5']} />,
