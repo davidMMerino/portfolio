@@ -50,6 +50,13 @@ import ilustraciones22 from '../images/portfolio/ilustraciones/ilustraciones22.j
 import ilustraciones23 from '../images/portfolio/ilustraciones/ilustraciones23.jpg';
 import ilustraciones24 from '../images/portfolio/ilustraciones/ilustraciones24.jpg';
 import ilustraciones25 from '../images/portfolio/ilustraciones/ilustraciones25.jpg';
+import elementary1 from '../images/portfolio/elementary/elementary1.jpg';
+import elementary2 from '../images/portfolio/elementary/elementary2.jpg';
+import elementary3 from '../images/portfolio/elementary/elementary3.jpg';
+import elementary4 from '../images/portfolio/elementary/elementary4.jpg';
+import elementary5 from '../images/portfolio/elementary/elementary5.jpg';
+import elementary6 from '../images/portfolio/elementary/elementary6.jpg';
+import elementary7 from '../images/portfolio/elementary/elementary7.jpg';
 import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
@@ -202,6 +209,13 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     deepDescription: <FormattedText text={translations['portfolio.deepDescription2']} />,
     image: caperucita1,
     images: [caperucita1, caperucita2, caperucita3, caperucita4, caperucita5],
+  },
+  {
+    title: <FormattedText text={translations['portfolio.title10']} />,
+    description: <FormattedText text={translations['portfolio.description10']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription10']} />,
+    image: elementary1,
+    images: [elementary1, elementary2, elementary3, elementary4, elementary5, elementary6, elementary7],
   },
   {
     title: <FormattedText text={translations['portfolio.title3']} />,
