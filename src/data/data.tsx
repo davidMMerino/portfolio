@@ -62,6 +62,10 @@ import moscagrossa4 from '../images/portfolio/moscagrossa/moscagrossa4.jpg';
 import moscagrossa5 from '../images/portfolio/moscagrossa/moscagrossa5.jpg';
 import moscagrossa6 from '../images/portfolio/moscagrossa/moscagrossa6.jpg';
 import moscagrossa7 from '../images/portfolio/moscagrossa/moscagrossa7.jpg';
+import zzz1 from '../images/portfolio/zzz/zzz1.png';
+import zzz2 from '../images/portfolio/zzz/zzz2.gif';
+import zzz3 from '../images/portfolio/zzz/zzz3.png';
+import zzz4 from '../images/portfolio/zzz/zzz4.png';
 import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
@@ -233,8 +237,8 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     title: <FormattedText text={translations['portfolio.title11']} />,
     description: <FormattedText text={translations['portfolio.description11']} />,
     deepDescription: <FormattedText text={translations['portfolio.deepDescription11']} />,
-    image: moscagrossa1, 
-    images: [moscagrossa1, moscagrossa4, moscagrossa5, moscagrossa6, moscagrossa7],
+    image: zzz1, 
+    images: [zzz1, zzz2, zzz3, zzz4],
   },
   {
     title: <FormattedText text={translations['portfolio.title4']} />,
@@ -249,6 +253,13 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     deepDescription: <FormattedText text={translations['portfolio.deepDescription5']} />,
     image: pulp1,
     images: [pulp1, pulp2, pulp3, pulp4, pulp5],
+  },
+  {
+    title: <FormattedText text={translations['portfolio.title11']} />,
+    description: <FormattedText text={translations['portfolio.description11']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription11']} />,
+    image: moscagrossa1, 
+    images: [moscagrossa1, moscagrossa4, moscagrossa5, moscagrossa6, moscagrossa7],
   },
   {
     title: <FormattedText text={translations['portfolio.title6']} />,
