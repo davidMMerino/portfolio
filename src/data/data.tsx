@@ -66,6 +66,13 @@ import zzz1 from '../images/portfolio/zzz/zzz1.png';
 import zzz2 from '../images/portfolio/zzz/zzz2.gif';
 import zzz3 from '../images/portfolio/zzz/zzz3.png';
 import zzz4 from '../images/portfolio/zzz/zzz4.png';
+import fisherman1 from '../images/portfolio/fisherman/fisherman1.png';
+import fisherman2 from '../images/portfolio/fisherman/fisherman2.gif';
+import fisherman3 from '../images/portfolio/fisherman/fisherman3.gif';
+import fisherman4 from '../images/portfolio/fisherman/fisherman4.gif';
+import fisherman5 from '../images/portfolio/fisherman/fisherman5.png';
+import fisherman6 from '../images/portfolio/fisherman/fisherman6.png';
+import fisherman7 from '../images/portfolio/fisherman/fisherman7.png';
 import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
@@ -211,6 +218,13 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     deepDescription: <FormattedText text={translations['portfolio.deepDescription1']} />,
     image: creacionJoven1,
     images: [creacionJoven1, creacionJoven2, creacionJoven3],
+  },
+  {
+    title: <FormattedText text={translations['portfolio.title13']} />,
+    description: <FormattedText text={translations['portfolio.description13']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription13']} />,
+    image: fisherman1, 
+    images: [fisherman2, fisherman3, fisherman4, fisherman5, fisherman6, fisherman7],
   },
   {
     title: <FormattedText text={translations['portfolio.title2']} />,
