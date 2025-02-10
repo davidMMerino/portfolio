@@ -50,14 +50,14 @@ import ilustraciones22 from '../images/portfolio/ilustraciones/ilustraciones22.j
 import ilustraciones23 from '../images/portfolio/ilustraciones/ilustraciones23.jpg';
 import ilustraciones24 from '../images/portfolio/ilustraciones/ilustraciones24.jpg';
 import ilustraciones25 from '../images/portfolio/ilustraciones/ilustraciones25.jpg';
-import elementary1 from '../images/portfolio/elementary/elementary1.jpg';
+import elementary1 from '../images/portfolio/elementary/elementary1.png';
 import elementary2 from '../images/portfolio/elementary/elementary2.jpg';
 import elementary3 from '../images/portfolio/elementary/elementary3.jpg';
 import elementary4 from '../images/portfolio/elementary/elementary4.jpg';
 import elementary5 from '../images/portfolio/elementary/elementary5.jpg';
 import elementary6 from '../images/portfolio/elementary/elementary6.jpg';
 import elementary7 from '../images/portfolio/elementary/elementary7.jpg';
-import moscagrossa1 from '../images/portfolio/moscagrossa/moscagrossa1.jpg';
+import moscagrossa1 from '../images/portfolio/moscagrossa/moscagrossa1.png';
 import moscagrossa2 from '../images/portfolio/moscagrossa/moscagrossa2.jpg';
 import moscagrossa4 from '../images/portfolio/moscagrossa/moscagrossa4.jpg';
 import moscagrossa5 from '../images/portfolio/moscagrossa/moscagrossa5.jpg';
