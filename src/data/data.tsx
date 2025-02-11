@@ -169,23 +169,23 @@ export const getSkills = (translations: any): SkillGroup[] => [
     skills: [
       {
         name: 'Adobe Illustrator',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Adobe Photoshop',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Adobe InDesign',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Adobe After Effects',
-        level: 6,
+        level: 7,
       },
       {
         name: 'Adobe Premiere',
-        level: 6,
+        level: 7,
       },
     ],
   },
