@@ -74,6 +74,18 @@ import fisherman4 from '../images/portfolio/fisherman/fisherman4.gif';
 import fisherman5 from '../images/portfolio/fisherman/fisherman5.png';
 import fisherman6 from '../images/portfolio/fisherman/fisherman6.png';
 import fisherman7 from '../images/portfolio/fisherman/fisherman7.png';
+import karneDeBaka0 from '../images/portfolio/karneDeBaka/karneDeBaka0.png';
+import karneDeBaka1 from '../images/portfolio/karneDeBaka/karneDeBaka1.png';
+import karneDeBaka2 from '../images/portfolio/karneDeBaka/karneDeBaka2.png';
+import karneDeBaka3 from '../images/portfolio/karneDeBaka/karneDeBaka3.png';
+import karneDeBaka4 from '../images/portfolio/karneDeBaka/karneDeBaka4.png';
+import karneDeBaka5 from '../images/portfolio/karneDeBaka/karneDeBaka5.png';
+import karneDeBaka6 from '../images/portfolio/karneDeBaka/karneDeBaka6.png';
+import karneDeBaka7 from '../images/portfolio/karneDeBaka/karneDeBaka7.png';
+import karneDeBaka8 from '../images/portfolio/karneDeBaka/karneDeBaka8.png';
+import karneDeBaka9 from '../images/portfolio/karneDeBaka/karneDeBaka9.png';
+import karneDeBaka10 from '../images/portfolio/karneDeBaka/karneDeBaka10.png';
+import karneDeBaka11 from '../images/portfolio/karneDeBaka/karneDeBaka11.png';
 import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
@@ -213,6 +225,13 @@ export const getSkills = (translations: any): SkillGroup[] => [
  */
 
 export const getPortfolioItems = (translations: any): PortfolioItem[] => [
+  {
+    title: <FormattedText text={translations['portfolio.title14']} />,
+    description: <FormattedText text={translations['portfolio.description14']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription14']} />,
+    image: karneDeBaka0,
+    images: [karneDeBaka1, karneDeBaka2, karneDeBaka3, karneDeBaka4, karneDeBaka5, karneDeBaka6, karneDeBaka7, karneDeBaka8, karneDeBaka9, karneDeBaka10, karneDeBaka11],
+  },
   {
     title: <FormattedText text={translations['portfolio.title1']} />,
     description: <FormattedText text={translations['portfolio.description1']} />,
