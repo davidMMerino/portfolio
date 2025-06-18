@@ -20,17 +20,14 @@
   "resume.experience.title": "Trabajo",
   "resume.skills.title": "Habilidades",
 
-  "resume.education.items.1.date": "En Curso",
   "resume.education.items.1.location": "Escuela de Arte y Diseño, Soria",
   "resume.education.items.1.title": "Grado Superior en Diseño Gráfico",
   "resume.education.items.1.content": "Además, he adquirido conocimientos en tipografía, teoría del color, composición visual, diseño UX/UI, creación de identidad de marca, desarrollo de proyectos editoriales y animación 2D. También he trabajado en la producción de materiales impresos y digitales, y he desarrollado habilidades para gestionar proyectos de diseño desde el concepto hasta su finalización.",
 
-  "resume.education.items.2.date": "2024",
   "resume.education.items.2.location": "Samsung & EOI",
   "resume.education.items.2.title": "Programación, algoritmos y estructuras de datos en Python para inteligencia artificial.",
   "resume.education.items.2.content": "Desarrollé una base sólida en programación con Python, incluyendo la creación de algoritmos y estructuras de datos eficientes. También adquirí habilidades para analizar datos complejos utilizando lógica algorítmica y aprendí a planificar programas mediante pseudocódigo y diagramas de flujo para optimizar procesos.",
 
-  "resume.education.items.3.date": "2024",
   "resume.education.items.3.location": "Samsung & EOI",
   "resume.education.items.3.title": "Inteligencia Artificial",
   "resume.education.items.3.content": "Adquirí una comprensión sólida de los fundamentos de la ciencia de datos y el aprendizaje automático. Estudié álgebra lineal, probabilidad y estadística aplicadas a la inteligencia artificial. Aprendí técnicas para procesar datos textuales y a construir redes neuronales profundas utilizando bibliotecas como TensorFlow y Keras para implementar modelos avanzados de inteligencia artificial.",
@@ -38,6 +35,11 @@
   "resume.experience.items.1.date": "2020, Presente",
   "resume.experience.items.1.title": "Ilustrador & Diseñador Gráfico Freelance",
   "resume.experience.items.1.content": "He trabajado en una variedad de proyectos tanto para particulares como para empresas, gestionando encargos como ilustraciones para retratos, revistas y pósters. Mi experiencia incluye la ilustración y maquetación de libros infantiles y novelas interactivas, así como la creación de elementos visuales para proyectos editoriales. A lo largo de mi carrera como freelance, he gestionado procesos de diseño de principio a fin, asegurando resultados de alta calidad adaptados a las necesidades de los clientes.",
+
+  "resume.experience.items.2.date": "2024, 2025",
+  "resume.experience.items.2.location": "GaoTek",
+  "resume.experience.items.2.title": "Diseñador Gráfico",
+  "resume.experience.items.2.content": "He realizado diseño gráfico para web y redes sociales, incluyendo publicaciones, branding y cartelería. Domino herramientas de Adobe como Photoshop, InDesign, Illustrator y Premiere. Me encargo de la creación y preparación de artes finales para impresión y medios digitales. También tengo experiencia en edición de video y motion graphics utilizando Premiere y After Effects. He incorporado el uso de inteligencia artificial, como DeepAI, para optimizar procesos de diseño. Además, gestiono y creo contenido para redes sociales, y colaboro con equipos coordinando tareas y tutorando a nuevos internos.",
 
   "resume.skills.groups.1.name": "Diseño Gráfico",
   "resume.skills.groups.2.name": "Desarrollador Front-End",
