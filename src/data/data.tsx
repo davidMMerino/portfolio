@@ -86,6 +86,13 @@ import karneDeBaka8 from '../images/portfolio/karneDeBaka/karneDeBaka8.png';
 import karneDeBaka9 from '../images/portfolio/karneDeBaka/karneDeBaka9.png';
 import karneDeBaka10 from '../images/portfolio/karneDeBaka/karneDeBaka10.png';
 import karneDeBaka11 from '../images/portfolio/karneDeBaka/karneDeBaka11.png';
+import logofolio1 from '../images/portfolio/logofolio/logofolio1.png';
+import logofolio2 from '../images/portfolio/logofolio/logofolio2.png';
+import logofolio3 from '../images/portfolio/logofolio/logofolio3.png';
+import logofolio4 from '../images/portfolio/logofolio/logofolio4.png';
+import logofolio5 from '../images/portfolio/logofolio/logofolio5.png';
+import logofolio6 from '../images/portfolio/logofolio/logofolio6.png';
+import logofolio7 from '../images/portfolio/logofolio/logofolio7.png';
 import profileImage from '../images/profileImage.png';
 import FormattedText from '../FormattedText';
 
@@ -231,6 +238,13 @@ export const getPortfolioItems = (translations: any): PortfolioItem[] => [
     deepDescription: <FormattedText text={translations['portfolio.deepDescription14']} />,
     image: karneDeBaka0,
     images: [karneDeBaka1, karneDeBaka2, karneDeBaka3, karneDeBaka4, karneDeBaka5, karneDeBaka6, karneDeBaka7, karneDeBaka8, karneDeBaka9, karneDeBaka10, karneDeBaka11],
+  },
+  {
+    title: <FormattedText text={translations['portfolio.title15']} />,
+    description: <FormattedText text={translations['portfolio.description15']} />,
+    deepDescription: <FormattedText text={translations['portfolio.deepDescription15']} />,
+    image: logofolio1,
+    images: [logofolio1, logofolio2, logofolio3, logofolio4, logofolio5, logofolio6, logofolio7],
   },
   {
     title: <FormattedText text={translations['portfolio.title1']} />,
