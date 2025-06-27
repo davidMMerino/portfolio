@@ -373,6 +373,12 @@ export const getExperience = (translations: any): TimelineItem[] => [
     title: translations['resume.experience.items.2.title'],
     content: translations['resume.experience.items.2.content'],
   },
+  {
+    date: translations['resume.experience.items.3.date'],
+    location: translations['resume.experience.items.3.location'],
+    title: translations['resume.experience.items.3.title'],
+    content: translations['resume.experience.items.3.content'],
+  },
 ];
 
 /**

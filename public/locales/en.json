@@ -45,6 +45,11 @@
     "resume.experience.items.2.title": "Graphic Designer",
     "resume.experience.items.2.content": "I have worked on graphic design for web and social media, including posts, branding, and promotional materials. I am proficient in Adobe tools such as Photoshop, InDesign, Illustrator, and Premiere. I handle the creation and preparation of final artwork for both print and digital media. I also have experience in video editing and motion graphics using Premiere and After Effects. I've integrated the use of artificial intelligence, such as DeepAI, to optimize design processes. Additionally, I manage and create content for social media, and collaborate with teams by coordinating tasks and mentoring new interns.",
 
+    "resume.experience.items.3.date": "2025",
+    "resume.experience.items.3.location": "Mudepo",
+    "resume.experience.items.3.title": "Full-Stack Developer",
+    "resume.experience.items.3.content": "I have worked on developing and implementing new features for a sports league management platform using Next.js for the frontend and Nest.js for the backend. My responsibilities included integrating new sections across the web and mobile app, automating processes such as schedule generation and player ranking systems, and enhancing user experience with a focus on functional design and clean visuals. I also optimized deployment workflows through CI/CD pipelines, ensuring secure and seamless production releases. This project strengthened my analytical skills, autonomy, and ability to deliver complete solutions that add real value to the end product.",
+
     "resume.skills.groups.1.name": "Graphic Design",
     "resume.skills.groups.2.name": "Front-End Developer",
 
